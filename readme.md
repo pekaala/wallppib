@@ -56,8 +56,9 @@ sudo apt-get install libgtkmm-3.0-dev
 
 ## Screenshots (for linux)
 
-![Expolore.](/image/sample.webp "sc_explore")
+![Explore.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_explore.png)
 
 
-![About.](/image/sample.webp "sc_about")
+
+![About.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_about.png "sc_about")
 
