@@ -29,7 +29,7 @@ sudo apt-get install libgtkmm-3.0-dev
 
 - **GIF Support**: Implementing functionality to handle Gif.
 - **UI**:Dynamic UI.
-- **Localization**: Supporting multiple languages including English, Turkish, and more. (completed)
+- **Localization**: Supporting multiple languages including English, Turkish, and more. (compeleted)
 
 #### Supported Languages
 
