@@ -8,7 +8,7 @@
 class WallpaperEngine
 {
 public:
-    void setWallpaper(const std::string &imagePath);
+    void SetWallpaper(const std::string &imagePath);
 
 private:
     void set_wallpaper_linux(const std::string &imagePath);

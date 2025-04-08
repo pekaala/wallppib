@@ -1,5 +1,5 @@
-#ifndef ABOUT_H
-#define ABOUT_H
+#ifndef ABOUT_VIEW_H
+#define ABOUT_VIEW_H
 
 #include <gtkmm/window.h>
 #include <gtkmm/label.h>
@@ -7,12 +7,16 @@
 #include <gtkmm/button.h>
 #include <gtkmm/separator.h>
 #include <gtkmm/image.h>
-#include "DirectoryPath.h"
+#include "../DirectoryPath.h"
+#include "../localization/LocalizationManager.h"
+#include "../localization/ILocalization.h"
+#include "../Log.h"
 
-class AboutWindow
+class AboutView : public ILocalization
 {
 public:
-    AboutWindow()
+    AboutView(LocalizationManager &locManager)
+        : localization_Manager(locManager)
     {
         m_AboutBox.set_orientation(Gtk::ORIENTATION_VERTICAL);
         m_AboutBox.set_spacing(10);
@@ -22,9 +26,9 @@ public:
         m_LogoBox.set_spacing(10);
         m_LogoBox.set_halign(Gtk::ALIGN_CENTER);
 
-        std::string iconStr = directory_Path.getDataIcon();
+        std::string iconPath = DirectoryPath::GetDataIconPath();
 
-        Glib::RefPtr<Gdk::Pixbuf> logoPixbuf = Gdk::Pixbuf::create_from_file(iconStr + "/logo_icon.svg");
+        Glib::RefPtr<Gdk::Pixbuf> logoPixbuf = Gdk::Pixbuf::create_from_file(iconPath + "/logo_icon.svg");
         Glib::RefPtr<Gdk::Pixbuf> scaledPixbuf = logoPixbuf->scale_simple(250, 100, Gdk::INTERP_BILINEAR);
 
         m_Logo.set(scaledPixbuf);
@@ -32,7 +36,9 @@ public:
 
         m_AboutBox.pack_start(m_Logo, Gtk::PACK_SHRINK);
 
-        m_VersionLabel.set_text("Version: " + win_Size.version);
+        std::string versionValue = localization_Manager.GetKey("app_version");
+        std::string versionTextFormat = versionValue + " " + win_Size.version;
+        m_VersionLabel.set_text(versionTextFormat);
         m_VersionLabel.set_halign(Gtk::ALIGN_CENTER);
         m_AboutBox.pack_start(m_VersionLabel, Gtk::PACK_SHRINK);
 
@@ -41,17 +47,17 @@ public:
         m_ButtonBox.set_halign(Gtk::ALIGN_CENTER);
 
         /*buttonDonate.set_label("Donate");
-        buttonDonate.signal_clicked().connect(sigc::mem_fun(*this, &AboutWindow::on_donate_clicked));
+        buttonDonate.signal_clicked().connect(sigc::mem_fun(*this, &AboutView::on_donate_clicked));
         m_ButtonBox.pack_start(buttonDonate, Gtk::PACK_SHRINK);*/
 
         /*
         buttonFeedback.set_label("Give Feedback");
-        buttonFeedback.signal_clicked().connect(sigc::mem_fun(*this, &AboutWindow::on_feedback_clicked));
+        buttonFeedback.signal_clicked().connect(sigc::mem_fun(*this, &AboutView::on_feedback_clicked));
         buttonFeedback.set_sensitive(false);
         m_ButtonBox.pack_start(buttonFeedback, Gtk::PACK_SHRINK);*/
 
-        buttonSourceCode.set_label("Github Source Code ");
-        buttonSourceCode.signal_clicked().connect(sigc::mem_fun(*this, &AboutWindow::on_source_code_clicked));
+        buttonSourceCode.set_label(localization_Manager.GetKey("github_src"));
+        buttonSourceCode.signal_clicked().connect(sigc::mem_fun(*this, &AboutView::on_source_code_clicked));
         m_ButtonBox.pack_start(buttonSourceCode, Gtk::PACK_SHRINK);
 
         m_AboutBox.pack_start(m_ButtonBox, Gtk::PACK_SHRINK);
@@ -60,7 +66,7 @@ public:
         m_AboutBox.pack_start(m_Separator, Gtk::PACK_SHRINK);
     }
 
-    Gtk::Box &get_box()
+    Gtk::Box &Get_Box_About()
     {
         return m_AboutBox;
     }
@@ -75,8 +81,8 @@ private:
     Gtk::Button buttonSourceCode;
     Gtk::Image m_Logo;
     Gtk::Separator m_Separator;
-    windowsize win_Size;
-    DirectoryPath directory_Path;
+    Windowsize win_Size;
+    LocalizationManager &localization_Manager;
 
     void on_donate_clicked()
     {
@@ -92,6 +98,15 @@ private:
     {
         system("xdg-open https://github.com/pekaala/wallppib");
     }
+
+    void listener_update_ui() override
+    {
+        buttonSourceCode.set_label(localization_Manager.GetKey("github_src"));
+
+        std::string versionValue = localization_Manager.GetKey("app_version");
+        std::string versionTextFormat = versionValue + " " + win_Size.version;
+        m_VersionLabel.set_text(versionTextFormat);
+    }
 };
 
-#endif // ABOUT_H
+#endif // ABOUT_VIEW_H

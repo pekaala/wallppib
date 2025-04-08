@@ -1,5 +1,5 @@
-#ifndef EXPLORE_H
-#define EXPLORE_H
+#ifndef EXPLORE_VIEW_H
+#define EXPLORE_VIEW_H
 
 #include <iostream>
 #include <vector>
@@ -10,20 +10,21 @@
 #include <gdkmm/pixbuf.h>
 #include <gtkmm/scrolledwindow.h>
 #include <gtkmm.h>
-#include "Windowsize.h"
 #include <gtkmm/eventbox.h>
-#include "Images.h"
-#include "ImageInfo.h"
 #include <gtkmm/messagedialog.h>
 #include <gtkmm/button.h>
-#include "WallpaperEngine.h"
+#include "../Images.h"
+#include "../ImageInfo.h"
+#include "../WallpaperEngine.h"
+#include "../Windowsize.h"
+#include "../localization/LocalizationManager.h"
+#include "../localization/ILocalization.h"
 
-using namespace std;
-
-class ExploreWindow
+class ExploreView : public ILocalization
 {
 public:
-    ExploreWindow()
+    ExploreView(LocalizationManager &locManager)
+        : localization_Manager(locManager)
     {
         m_Layout.set_size(win_Size.W, win_Size.H);
 
@@ -60,7 +61,7 @@ public:
             eventBox->add(*img);
 
             eventBox->signal_button_press_event().connect(
-                sigc::bind(sigc::mem_fun(*this, &ExploreWindow::on_image_click), imageInfo));
+                sigc::bind(sigc::mem_fun(*this, &ExploreView::on_image_click), imageInfo));
 
             int row = i / 2;
             int col = i % 2;
@@ -75,11 +76,11 @@ public:
 
         m_ImageNameLabel.set_margin_end(330);
         m_ImageNameLabel.set_margin_start(1320);
-        m_ImageNameLabel.set_text("No image selected.");
+        m_ImageNameLabel.set_label(localization_Manager.GetKey("no_selected_image"));
         m_Layout.put(m_ImageNameLabel, 50, 500);
     }
 
-    Gtk::Layout &get_layout()
+    Gtk::Layout &Get_Layout_Explore()
     {
         return m_Layout;
     }
@@ -94,12 +95,15 @@ private:
     std::vector<Gtk::EventBox *> m_EventBoxes;
     Gtk::Button set_WallpButton;
     std::string selected_Image_Path;
-    windowsize win_Size;
+    Windowsize win_Size;
     Images imgs;
     WallpaperEngine wallpaper_Engine;
+    LocalizationManager &localization_Manager;
+    bool m_IsSelected_Image = false;
 
     bool on_image_click(GdkEventButton *event, const ImageInfo &imageInfo)
     {
+        m_IsSelected_Image = true;
         Glib::RefPtr<Gdk::Pixbuf> pixbuf = Gdk::Pixbuf::create_from_file(imageInfo.getPath());
         Glib::RefPtr<Gdk::Pixbuf> scaled_pixbuf = pixbuf->scale_simple(480, 270, Gdk::INTERP_BILINEAR);
 
@@ -115,6 +119,7 @@ private:
 
         selected_Image_Path = imageInfo.getPath();
 
+        //  NOTE: Not localized on purpose – this line will be removed in the future
         std::string imageTextInfo =
             "ImageName: " + imageInfo.getImageName() + "\n" +
             "Path: " + imageInfo.getPath() + "\n" +
@@ -125,12 +130,12 @@ private:
         m_ImageNameLabel.set_text(imageTextInfo);
         m_Layout.put(m_ImageNameLabel, 50, 500);
 
-        set_WallpButton.set_label("Set Wallpaper");
+        set_WallpButton.set_label(localization_Manager.GetKey("set_wallpaper"));
         set_WallpButton.set_margin_end(1);
         set_WallpButton.set_margin_top(95);
         set_WallpButton.set_margin_start(1320);
 
-        set_WallpButton.signal_clicked().connect(sigc::mem_fun(*this, &ExploreWindow::on_set_wallpaper));
+        set_WallpButton.signal_clicked().connect(sigc::mem_fun(*this, &ExploreView::on_set_wallpaper));
 
         m_Layout.put(set_WallpButton, 50, 500);
 
@@ -142,6 +147,16 @@ private:
     {
         wallpaper_Engine.setWallpaper(selected_Image_Path);
     }
+
+    void listener_update_ui() override
+    {
+        if (!m_IsSelected_Image)
+        {
+            m_ImageNameLabel.set_label(localization_Manager.GetKey("no_selected_image"));
+        }
+
+        set_WallpButton.set_label(localization_Manager.GetKey("set_wallpaper"));
+    }
 };
 
-#endif // EXPLORE_H
+#endif // EXPLORE_VIEW_H

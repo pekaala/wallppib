@@ -9,7 +9,7 @@
 #include <windows.h>
 #endif
 
-void WallpaperEngine::setWallpaper(const std::string &imagePath)
+void WallpaperEngine::SetWallpaper(const std::string &imagePath)
 {
     // set_wallpaper_linux(imagePath);
 
@@ -61,7 +61,6 @@ void WallpaperEngine::set_wallpaper_linux(const std::string &imagePath)
                 std::string WID = getRootWindowID();
                 if (WID.empty())
                 {
-                    Log("WID alınamadı!");
 
                     std::cerr << "Hata: WID alınamadı!" << std::endl;
                     return;

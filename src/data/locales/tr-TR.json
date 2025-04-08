@@ -1,0 +1,13 @@
+{
+  "select_lang": "Dil Seç",
+  "app_version": "Versiyon",
+  "github_src": "Github, Kaynak Kod",
+  "menu_explore": "Keşfet",
+  "menu_about": "Hakkında",
+  "menu_settings": "Ayarlar",
+  "set_wallpaper": "Duvar Kağıdını Ayarla",
+  "no_selected_image": "Resim Seçilmedi",
+  "image_name": "Resim Adı",
+  "image_path": "Yolu",
+  "image_type": "Tipi"
+}

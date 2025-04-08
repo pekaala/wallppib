@@ -1,5 +1,5 @@
-#ifndef DIRECTORYPATH_H
-#define DIRECTORYPATH_H
+#ifndef DIRECTORY_PATH_H
+#define DIRECTORY_PATH_H
 
 #include <filesystem>
 #include <string>
@@ -10,7 +10,7 @@ class DirectoryPath
 {
 
 public:
-    std::string getDataContents()
+    static std::string GetDataContentsPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -41,7 +41,7 @@ public:
         }
     }
 
-    std::string getDataIcon()
+    static std::string GetDataIconPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -68,36 +68,32 @@ public:
         }
     }
 
-    /* std::string getDataContents()
+    static std::string GetDataLocalizationPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
         if (currentDirectory.filename() == "build")
         {
             currentDirectory = currentDirectory.parent_path();
+
+            fs::path iconsDirectory = currentDirectory / "src" / "data" / "locales";
+
+            std::string dataStr = iconsDirectory.string();
+            return dataStr;
         }
-
-        fs::path dataDirectory = currentDirectory / "src" / "data";
-
-        std::string dataStr = dataDirectory.string();
-        return dataStr;
-    }
-
-    std::string getDataIcon()
-    {
-        fs::path currentDirectory = fs::absolute(fs::current_path());
-
-        if (currentDirectory.filename() == "build")
+        else // for localBuild
         {
-            currentDirectory = currentDirectory.parent_path();
+            fs::path currentDirectoryLocal = fs::current_path();
+
+            fs::path srcDirectory = currentDirectoryLocal.parent_path().parent_path() / "src";
+
+            fs::path dataDirectory = srcDirectory / "data";
+            fs::path iconsDirectory = dataDirectory / "locales";
+
+            std::string dataStr = iconsDirectory.string();
+            return dataStr;
         }
-
-        fs::path iconsDirectory = currentDirectory / "src" / "data" / "icons";
-
-        std::string dataStr = iconsDirectory.string();
-        return dataStr;
     }
-    */
 };
 
-#endif // DIRECTORYPATH_H
+#endif // DIRECTORY_PATH_H

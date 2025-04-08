@@ -9,26 +9,25 @@ set(SOURCES
     src/wallpaperengine.cpp
 )
 
+set(CMAKE_TOOLCHAIN_FILE /home/ibrahim/vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "")
+
+include_directories(/home/ibrahim/vcpkg/installed/x64-linux/include)
+
 add_executable(wallppib ${SOURCES})
 
 if(WIN32)
     message(STATUS "Building for Windows")
-
     find_package(PkgConfig REQUIRED)
     pkg_check_modules(GTKMM gtkmm-3.0)
-
     include_directories(${GTKMM_INCLUDE_DIRS})
     link_directories(${GTKMM_LIBRARY_DIRS})
-
     set(SYSTEM_LIBS user32 gdi32)
 endif()
 
 if(UNIX)
     message(STATUS "Building for Linux")
-
     find_package(PkgConfig REQUIRED)
     pkg_check_modules(GTKMM gtkmm-3.0)
-
     include_directories(${GTKMM_INCLUDE_DIRS})
     link_directories(${GTKMM_LIBRARY_DIRS})
 endif()

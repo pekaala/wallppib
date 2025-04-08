@@ -4,9 +4,9 @@
 
 using namespace std;
 
-struct windowsize
+struct Windowsize
 {
-    const string version = "1.0.0";
+    const string version = "1.1.0";
 
     const string appName = "wallppib";
 

@@ -6,11 +6,9 @@
 #include "ImageInfo.h"
 #include "DirectoryPath.h"
 
-DirectoryPath directoryPath;
-
 class Images
 {
-    std::string dataStr = directoryPath.getDataContents();
+    std::string dataStr = DirectoryPath::GetDataContentsPath();
 
 public:
     const std::vector<ImageInfo> images{

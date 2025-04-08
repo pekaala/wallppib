@@ -20,37 +20,6 @@ public:
     }
 
 private:
-    std::string mainDirectory;
-
-    /*void log_error(const std::string &message)
-        {
-            fs::path currentDirectory = fs::current_path();
-
-            fs::path srcDirectory = currentDirectory.parent_path().parent_path() / "src";
-
-            fs::path dataDirectory = srcDirectory / "logs";
-
-            mainDirectory = dataDirectory.string();
-
-            std::string logFilePath = mainDirectory + "/errors.log";
-
-            if (!fs::exists(mainDirectory))
-            {
-                fs::create_directory(mainDirectory);
-            }
-
-            std::ofstream logFile(logFilePath, std::ios::app);
-            if (logFile.is_open())
-            {
-                logFile << get_current_time() << " - " << message << std::endl;
-                logFile.close();
-            }
-            else
-            {
-                std::cerr << "Log file not active!" << std::endl;
-            }
-        } */
-
     void log_error(const std::string &message)
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
@@ -73,7 +42,7 @@ private:
         std::ofstream logFile(logFilePath, std::ios::app);
         if (logFile.is_open())
         {
-            logFile << message << std::endl;
+            logFile << get_current_time() << " - " << message << std::endl;
             logFile.close();
         }
         else

@@ -5,24 +5,31 @@
       "name": "Linux",
       "includePath": [
         "${workspaceFolder}/**",
-        "/usr/include/gtkmm-3.0",
+        "/usr/include/gtkmm-4.0",
         "/usr/include/c++/7",
-        "/usr/include/gtk-3.0",
-        "/usr/include/gdkmm-3.0",
-        "/usr/include/cairomm-1.0",
-        "/usr/include/sigc++-2.0",
-        "/usr/include/glibmm-2.4"
+        "/usr/include/gtk-4.0",
+        "/usr/include/gdkmm-4.0",
+        "/usr/include/cairomm-1.16",
+        "/usr/include/sigc++-3.0",
+        "/usr/include/glibmm-2.68",
+        "/usr/include/pangomm-2.48",
+        "/usr/include/giomm-2.68"
       ],
       "defines": [],
       "compilerPath": "/usr/bin/g++",
       "cStandard": "c11",
-      "cppStandard": "c++11",
+      "cppStandard": "c++17",
       "intelliSenseMode": "linux-gcc-x64",
       "browse": {
         "path": [
-          "/usr/include/gtkmm-3.0",
-          "/usr/include/c++/7",
-          "/usr/include/gtk-3.0"
+          "/usr/include/gtkmm-4.0",
+          "/usr/include/gtk-4.0",
+          "/usr/include/gdkmm-4.0",
+          "/usr/include/cairomm-1.16",
+          "/usr/include/sigc++-3.0",
+          "/usr/include/glibmm-2.68",
+          "/usr/include/pangomm-2.48",
+          "/usr/include/giomm-2.68"
         ],
         "limitSymbolsToIncludedHeaders": true
       }
