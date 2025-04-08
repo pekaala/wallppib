@@ -41,7 +41,7 @@ sudo apt-get install libgtkmm-3.0-dev
 | French   | Available (translated with AI) [Help improve translation](https://example.com/contribute) |
 | German   | Available (translated with AI) [Help improve translation](https://example.com/contribute) |
 
-![Example GIF](https://media.giphy.com/media/xT0GqcOuFA1k2L7v6U/giphy.gif)
+![Example GIF](https://github.com/pekaala/wallppib/blob/main/sc/versions/1.1.0/localizationwork.gif)
 
 ## Upcoming Features
 
