@@ -35,11 +35,11 @@ sudo apt-get install libgtkmm-3.0-dev
 
 | Language | Status                                                                                    |
 | -------- | ----------------------------------------------------------------------------------------- |
-| English  | Available [Help improve translation](https://example.com/contribute)                      |
-| Turkish  | Available [Help improve translation](https://example.com/contribute)                      |
-| Spanish  | Available (translated with AI) [Help improve translation](https://example.com/contribute) |
-| French   | Available (translated with AI) [Help improve translation](https://example.com/contribute) |
-| German   | Available (translated with AI) [Help improve translation](https://example.com/contribute) |
+| English  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/en-US.json)                      |
+| Turkish  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/tr-TR.json)                      |
+| Spanish  | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/es-ES.json) |
+| French   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/fr-FR.json) |
+| German   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/de-DE.json) |
 
 ![Example GIF](https://github.com/pekaala/wallppib/blob/main/sc/versions/1.1.0/localizationwork.gif)
 
