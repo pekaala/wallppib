@@ -1,9 +1,0 @@
-*.cpp linguist-language=C++
-
-*.h linguist-language=C++
-
-*.ts linguist-vendored
-
-CMakeLists.txt linguist-generated
-
-
