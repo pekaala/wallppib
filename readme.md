@@ -29,6 +29,8 @@ sudo apt-get install libgtkmm-3.0-dev
 
 - **GIF Support**: Implementing functionality to handle Gif.
 - **UI**:Dynamic UI.
+- **Flatpak & Snap (Snappy)**: Support for seamless installation and integration, providing two package distribution methods.
+  
 - **Localization**: Supporting multiple languages including English, Turkish, and more. (completed)
 
 #### Supported Languages
@@ -46,7 +48,6 @@ sudo apt-get install libgtkmm-3.0-dev
 ## Upcoming Features
 
 - **Feedback System**: Allows users to give feedback easily and help improve the application.
-- **Flatpak & Snap (Snappy)**: Support for seamless installation and integration, providing two package distribution methods.
 - **Pagination and Search**: Efficient search and pagination features for easy navigation through wallpapers.
 - **Wallpaper management**: Organize and manage your wallpapers with ease.
 - **Customize wallpaper management**: Customization.
