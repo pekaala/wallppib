@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Wallppib
+Comment=
+Keywords=wallpaper;settings; preferences;
+Icon=/System/Resources/Komorebi/komorebi.svg
+Exec=/System/Applications/komorebi
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;System;
+X-GNOME-Autostart-enabled=true

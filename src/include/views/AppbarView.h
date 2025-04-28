@@ -7,29 +7,22 @@
 #include "ExploreView.h"
 #include "AboutView.h"
 #include "SettingsView.h"
-#include "../Windowsize.h"
+#include "../common/WindowSize.h"
 #include "../localization/LocalizationManager.h"
 #include "../Log.h"
+#include "../DirectoryPath.h"
+
+using namespace std;
 
 class AppbarView : public Gtk::Window, public ILocalization
 {
 public:
-    AppbarView(Windowsize winSize)
+    AppbarView(WindowSize winSize)
         : m_VBox(Gtk::ORIENTATION_VERTICAL), m_AppBarBox(Gtk::ORIENTATION_HORIZONTAL), m_Notebook()
     {
         set_title(winSize.appName);
         set_default_size(winSize.W, winSize.H);
 
-        /*m_exploreItem = Gtk::manage(new Gtk::MenuItem(localization_Manager.GetKey("menu_explore")));
-        m_aboutItem = Gtk::manage(new Gtk::MenuItem(localization_Manager.GetKey("menu_about")));
-
-        m_Menubar.append(*m_exploreItem);
-        m_Menubar.append(*m_aboutItem);
-
-        m_exploreItem->signal_button_press_event().connect(sigc::mem_fun(*this, &AppbarView::on_explore_click));
-        m_aboutItem->signal_button_press_event().connect(sigc::mem_fun(*this, &AppbarView::on_about_click));*/
-
-        // m_VBox.pack_start(m_Menubar, Gtk::PACK_SHRINK);
         m_VBox.pack_start(m_Notebook, Gtk::PACK_EXPAND_WIDGET);
 
         m_ExploreView = new ExploreView(localization_Manager);
@@ -42,54 +35,81 @@ public:
         localization_Manager.RegisterLocalizableView(m_SettingsView);
 
         m_Notebook.append_page(m_ExploreView->Get_Layout_Explore(), localization_Manager.GetKey("menu_explore"));
-        m_Notebook.append_page(m_AboutView->Get_Box_About(), localization_Manager.GetKey("menu_about"));
-        m_Notebook.append_page(m_SettingsView->Get_Box_Settings(), localization_Manager.GetKey("menu_settings"));
+
+        header_bar();
 
         add(m_VBox);
         show_all_children();
     }
 
 private:
+    Gtk::HeaderBar header_Bar;
+    Gtk::Button menu_button;
+    Gtk::Menu menu;
+    Gtk::MenuItem menu_About, menu_Settings, menu_Quit;
     Gtk::MenuBar m_Menubar;
-    Gtk::MenuItem *m_exploreItem;
     Gtk::MenuItem *m_aboutItem;
     Gtk::Box m_VBox;
     Gtk::Box m_AppBarBox;
     Gtk::Notebook m_Notebook;
     ExploreView *m_ExploreView;
     AboutView *m_AboutView;
-    Gtk::MenuItem m_ExploreItem;
     SettingsView *m_SettingsView;
     LocalizationManager localization_Manager;
 
-    bool on_explore_click(GdkEventButton *event)
+    void header_bar()
     {
-        if (event->type == GDK_BUTTON_PRESS && event->button == 1)
-        {
-            m_Notebook.set_current_page(0);
-            return true;
-        }
-        return false;
+        header_Bar.set_show_close_button(true);
+        set_titlebar(header_Bar);
+
+        menu_About.set_label(localization_Manager.GetKey("menu_about"));
+        menu_Settings.set_label(localization_Manager.GetKey("menu_settings"));
+        menu_Quit.set_label(localization_Manager.GetKey("menu_quit"));
+
+        menu.append(menu_About);
+        menu.append(menu_Settings);
+        menu.append(menu_Quit);
+
+        menu_About.show();
+        menu_Settings.show();
+        menu_Quit.show();
+
+        menu_About.signal_activate().connect(sigc::mem_fun(*this, &AppbarView::on_about_dialog));
+
+        menu_Settings.signal_activate().connect(sigc::mem_fun(*this, &AppbarView::on_settings_dialog));
+
+        menu_Quit.signal_activate()
+            .connect([this]()
+                     { hide(); });
+
+        string iconPath = DirectoryPath::GetDataIconPath();
+
+        auto icon = Gtk::manage(new Gtk::Image(iconPath + "/ICmenu.png"));
+
+        menu_button.set_image(*icon);
+        menu_button.signal_clicked().connect([this]()
+                                             { this->menu.popup_at_pointer(nullptr); });
+
+        header_Bar.pack_end(menu_button);
     }
 
-    bool on_about_click(GdkEventButton *event)
+    void on_about_dialog()
     {
-        if (event->type == GDK_BUTTON_PRESS && event->button == 1)
-        {
-            m_Notebook.set_current_page(1);
-            return true;
-        }
-        return false;
+        m_AboutView->Show_About_Dialog(*this);
+    }
+
+    void on_settings_dialog()
+    {
+        m_SettingsView->Show_Settings_Dialog(*this);
     }
 
     void listener_update_ui() override
     {
         m_Notebook.set_tab_label_text(m_ExploreView->Get_Layout_Explore(), localization_Manager.GetKey("menu_explore"));
-        m_Notebook.set_tab_label_text(m_AboutView->Get_Box_About(), localization_Manager.GetKey("menu_about"));
-        m_Notebook.set_tab_label_text(m_SettingsView->Get_Box_Settings(), localization_Manager.GetKey("menu_settings"));
 
-        /*m_exploreItem->set_label(localization_Manager.GetKey("menu_explore"));
-        m_aboutItem->set_label(localization_Manager.GetKey("menu_about"));*/
+        menu_About.set_label(localization_Manager.GetKey("menu_about"));
+        menu_Settings.set_label(localization_Manager.GetKey("menu_settings"));
+        menu_Quit.set_label(localization_Manager.GetKey("menu_quit"));
     }
 };
 #endif // APPBAR_VIEW_H

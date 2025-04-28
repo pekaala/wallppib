@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wallppib.dir/src/main.cpp.o"
   "CMakeFiles/wallppib.dir/src/main.cpp.o.d"
-  "CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o"
-  "CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o.d"
+  "CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o"
+  "CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o.d"
   "wallppib"
   "wallppib.pdb"
 )

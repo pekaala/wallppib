@@ -1477,22 +1477,7 @@ CMakeFiles/wallppib.dir/src/main.cpp.o: \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/AppbarView.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/ExploreView.h \
  /usr/include/c++/11/iostream \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../Images.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../ImageInfo.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../DirectoryPath.h \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../ImageInfo.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../WallpaperEngine.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../Windowsize.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../wallpaper/WallpaperManager.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/../localization/LocalizationManager.h \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/json.hpp \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/adl_serializer.hpp \
@@ -1520,6 +1505,16 @@ CMakeFiles/wallppib.dir/src/main.cpp.o: \
  /usr/include/c++/11/cstring \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/identity_tag.hpp \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/std_fs.hpp \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/detail/conversions/to_json.hpp \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/iteration_proxy.hpp \
  /home/ibrahim/vcpkg/installed/x64-linux/include/nlohmann/byte_container_with_subtype.hpp \
@@ -1595,10 +1590,261 @@ CMakeFiles/wallppib.dir/src/main.cpp.o: \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/../localization/../Log.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/../localization/./ILocalization.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/../localization/ILocalization.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/AboutView.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/views/../DirectoryPath.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/Image.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/ImageManager.h \
+ /usr/include/opencv4/opencv2/opencv.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/core/version.hpp \
+ /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/check.hpp \
+ /usr/include/opencv4/opencv2/core/traits.hpp \
+ /usr/include/opencv4/opencv2/core/matx.hpp \
+ /usr/include/opencv4/opencv2/core/saturate.hpp \
+ /usr/include/opencv4/opencv2/core/fast_math.hpp \
+ /usr/include/opencv4/opencv2/core/types.hpp \
+ /usr/include/opencv4/opencv2/core/mat.hpp \
+ /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+ /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+ /usr/include/opencv4/opencv2/core/persistence.hpp \
+ /usr/include/opencv4/opencv2/core/operations.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/opencv4/opencv2/core/optim.hpp \
+ /usr/include/opencv4/opencv2/core/ovx.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/calib3d.hpp \
+ /usr/include/opencv4/opencv2/features2d.hpp \
+ /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/config.h \
+ /usr/include/opencv4/opencv2/core/affine.hpp \
+ /usr/include/opencv4/opencv2/dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/core/async.hpp \
+ /usr/include/opencv4/opencv2/dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/dict.hpp \
+ /usr/include/opencv4/opencv2/dnn/layer.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/flann.hpp \
+ /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+ /usr/include/opencv4/opencv2/flann/general.h \
+ /usr/include/opencv4/opencv2/flann/matrix.h \
+ /usr/include/opencv4/opencv2/flann/params.h \
+ /usr/include/opencv4/opencv2/flann/any.h \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/saving.h \
+ /usr/include/opencv4/opencv2/flann/nn_index.h \
+ /usr/include/opencv4/opencv2/flann/result_set.h \
+ /usr/include/opencv4/opencv2/flann/all_indices.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+ /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+ /usr/include/opencv4/opencv2/flann/dist.h \
+ /usr/include/opencv4/opencv2/flann/heap.h \
+ /usr/include/opencv4/opencv2/flann/allocator.h \
+ /usr/include/opencv4/opencv2/flann/random.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+ /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+ /usr/include/opencv4/opencv2/flann/logger.h \
+ /usr/include/opencv4/opencv2/flann/composite_index.h \
+ /usr/include/opencv4/opencv2/flann/linear_index.h \
+ /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_table.h \
+ /usr/include/c++/11/math.h \
+ /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+ /usr/include/opencv4/opencv2/flann/ground_truth.h \
+ /usr/include/opencv4/opencv2/flann/index_testing.h \
+ /usr/include/opencv4/opencv2/flann/timer.h \
+ /usr/include/opencv4/opencv2/flann/sampling.h \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgcodecs.hpp \
+ /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+ /usr/include/opencv4/opencv2/ml.hpp \
+ /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+ /usr/include/opencv4/opencv2/objdetect.hpp \
+ /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+ /usr/include/opencv4/opencv2/objdetect/face.hpp \
+ /usr/include/opencv4/opencv2/photo.hpp \
+ /usr/include/opencv4/opencv2/stitching.hpp \
+ /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.hpp \
+ /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/video.hpp \
+ /usr/include/opencv4/opencv2/video/tracking.hpp \
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /usr/include/ImageMagick-6/Magick++.h \
+ /usr/include/ImageMagick-6/Magick++/Include.h \
+ /usr/include/ImageMagick-6/magick/magick-config.h \
+ /usr/include/x86_64-linux-gnu/ImageMagick-6/magick/magick-baseconfig.h \
+ /usr/include/ImageMagick-6/magick/MagickCore.h \
+ /usr/include/ImageMagick-6/magick/method-attribute.h \
+ /usr/include/ImageMagick-6/magick/magick-type.h \
+ /usr/include/ImageMagick-6/magick/animate.h \
+ /usr/include/ImageMagick-6/magick/annotate.h \
+ /usr/include/ImageMagick-6/magick/draw.h \
+ /usr/include/ImageMagick-6/magick/geometry.h \
+ /usr/include/ImageMagick-6/magick/image.h \
+ /usr/include/ImageMagick-6/magick/color.h \
+ /usr/include/ImageMagick-6/magick/pixel.h \
+ /usr/include/ImageMagick-6/magick/colorspace.h \
+ /usr/include/ImageMagick-6/magick/constitute.h \
+ /usr/include/ImageMagick-6/magick/exception.h \
+ /usr/include/ImageMagick-6/magick/semaphore.h \
+ /usr/include/ImageMagick-6/magick/blob.h \
+ /usr/include/ImageMagick-6/magick/stream.h \
+ /usr/include/ImageMagick-6/magick/cache-view.h \
+ /usr/include/ImageMagick-6/magick/composite.h \
+ /usr/include/ImageMagick-6/magick/compress.h \
+ /usr/include/ImageMagick-6/magick/effect.h \
+ /usr/include/ImageMagick-6/magick/morphology.h \
+ /usr/include/ImageMagick-6/magick/layer.h \
+ /usr/include/ImageMagick-6/magick/locale_.h \
+ /usr/include/ImageMagick-6/magick/hashmap.h \
+ /usr/include/ImageMagick-6/magick/monitor.h \
+ /usr/include/ImageMagick-6/magick/profile.h \
+ /usr/include/ImageMagick-6/magick/string_.h \
+ /usr/include/ImageMagick-6/magick/quantum.h \
+ /usr/include/ImageMagick-6/magick/resample.h \
+ /usr/include/ImageMagick-6/magick/resize.h \
+ /usr/include/ImageMagick-6/magick/timer.h \
+ /usr/include/ImageMagick-6/magick/type.h \
+ /usr/include/ImageMagick-6/magick/artifact.h \
+ /usr/include/ImageMagick-6/magick/attribute.h \
+ /usr/include/ImageMagick-6/magick/cache.h \
+ /usr/include/ImageMagick-6/magick/channel.h \
+ /usr/include/ImageMagick-6/magick/cipher.h \
+ /usr/include/ImageMagick-6/magick/client.h \
+ /usr/include/ImageMagick-6/magick/coder.h \
+ /usr/include/ImageMagick-6/magick/colormap.h \
+ /usr/include/ImageMagick-6/magick/compare.h \
+ /usr/include/ImageMagick-6/magick/configure.h \
+ /usr/include/ImageMagick-6/magick/decorate.h \
+ /usr/include/ImageMagick-6/magick/delegate.h \
+ /usr/include/ImageMagick-6/magick/deprecate.h \
+ /usr/include/ImageMagick-6/magick/quantize.h \
+ /usr/include/ImageMagick-6/magick/registry.h \
+ /usr/include/ImageMagick-6/magick/display.h \
+ /usr/include/ImageMagick-6/magick/distort.h \
+ /usr/include/ImageMagick-6/magick/distribute-cache.h \
+ /usr/include/ImageMagick-6/magick/enhance.h \
+ /usr/include/ImageMagick-6/magick/feature.h \
+ /usr/include/ImageMagick-6/magick/fourier.h \
+ /usr/include/ImageMagick-6/magick/fx.h \
+ /usr/include/ImageMagick-6/magick/gem.h \
+ /usr/include/ImageMagick-6/magick/random_.h \
+ /usr/include/ImageMagick-6/magick/visual-effects.h \
+ /usr/include/ImageMagick-6/magick/histogram.h \
+ /usr/include/ImageMagick-6/magick/identify.h \
+ /usr/include/ImageMagick-6/magick/image-view.h \
+ /usr/include/ImageMagick-6/magick/list.h \
+ /usr/include/ImageMagick-6/magick/log.h \
+ /usr/include/ImageMagick-6/magick/magic.h \
+ /usr/include/ImageMagick-6/magick/magick.h \
+ /usr/include/ImageMagick-6/magick/matrix.h \
+ /usr/include/ImageMagick-6/magick/memory_.h \
+ /usr/include/ImageMagick-6/magick/module.h \
+ /usr/include/ImageMagick-6/magick/version.h \
+ /usr/include/ImageMagick-6/magick/mime.h \
+ /usr/include/ImageMagick-6/magick/montage.h \
+ /usr/include/ImageMagick-6/magick/opencl.h \
+ /usr/include/ImageMagick-6/magick/option.h \
+ /usr/include/ImageMagick-6/magick/paint.h \
+ /usr/include/ImageMagick-6/magick/pixel-accessor.h \
+ /usr/include/ImageMagick-6/magick/policy.h \
+ /usr/include/ImageMagick-6/magick/prepress.h \
+ /usr/include/ImageMagick-6/magick/property.h \
+ /usr/include/ImageMagick-6/magick/resource_.h \
+ /usr/include/ImageMagick-6/magick/segment.h \
+ /usr/include/ImageMagick-6/magick/shear.h \
+ /usr/include/ImageMagick-6/magick/signature.h \
+ /usr/include/ImageMagick-6/magick/splay-tree.h \
+ /usr/include/ImageMagick-6/magick/static.h \
+ /usr/include/ImageMagick-6/magick/statistic.h \
+ /usr/include/ImageMagick-6/magick/token.h \
+ /usr/include/ImageMagick-6/magick/transform.h \
+ /usr/include/ImageMagick-6/magick/threshold.h \
+ /usr/include/ImageMagick-6/magick/utility.h \
+ /usr/include/ImageMagick-6/magick/vision.h \
+ /usr/include/ImageMagick-6/magick/xml-tree.h \
+ /usr/include/ImageMagick-6/magick/xwindow.h \
+ /usr/include/ImageMagick-6/wand/MagickWand.h \
+ /usr/include/ImageMagick-6/wand/method-attribute.h \
+ /usr/include/ImageMagick-6/wand/animate.h \
+ /usr/include/ImageMagick-6/wand/compare.h \
+ /usr/include/ImageMagick-6/wand/composite.h \
+ /usr/include/ImageMagick-6/wand/conjure.h \
+ /usr/include/ImageMagick-6/wand/convert.h \
+ /usr/include/ImageMagick-6/wand/deprecate.h \
+ /usr/include/ImageMagick-6/wand/drawing-wand.h \
+ /usr/include/ImageMagick-6/wand/pixel-wand.h \
+ /usr/include/ImageMagick-6/wand/magick-wand.h \
+ /usr/include/ImageMagick-6/wand/pixel-iterator.h \
+ /usr/include/ImageMagick-6/wand/display.h \
+ /usr/include/ImageMagick-6/wand/identify.h \
+ /usr/include/ImageMagick-6/wand/import.h \
+ /usr/include/ImageMagick-6/wand/magick-property.h \
+ /usr/include/ImageMagick-6/wand/magick-image.h \
+ /usr/include/ImageMagick-6/wand/mogrify.h \
+ /usr/include/ImageMagick-6/wand/montage.h \
+ /usr/include/ImageMagick-6/wand/stream.h \
+ /usr/include/ImageMagick-6/wand/wand-view.h \
+ /usr/include/ImageMagick-6/Magick++/Functions.h \
+ /usr/include/ImageMagick-6/Magick++/Image.h \
+ /usr/include/ImageMagick-6/Magick++/Blob.h \
+ /usr/include/ImageMagick-6/Magick++/ChannelMoments.h \
+ /usr/include/ImageMagick-6/Magick++/Color.h \
+ /usr/include/ImageMagick-6/Magick++/Drawable.h \
+ /usr/include/ImageMagick-6/Magick++/Geometry.h \
+ /usr/include/ImageMagick-6/Magick++/Exception.h \
+ /usr/include/ImageMagick-6/Magick++/TypeMetric.h \
+ /usr/include/ImageMagick-6/Magick++/Pixels.h \
+ /usr/include/ImageMagick-6/Magick++/ResourceLimits.h \
+ /usr/include/ImageMagick-6/Magick++/STL.h \
+ /usr/include/ImageMagick-6/Magick++/CoderInfo.h \
+ /usr/include/ImageMagick-6/Magick++/Montage.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/../Log.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/Image.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/../settings/Settings.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/../settings/../DirectoryPath.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../images/../settings/../Log.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/../Log.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/ToastMessageView.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../common/WindowSize.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../DirectoryPath.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/AboutView.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/views/SettingsView.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/Windowsize.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/views/../settings/Settings.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/common/WindowSize.h \
  /home/ibrahim/OpenSource/wallppib/src/./include/Log.h \
- /home/ibrahim/OpenSource/wallppib/src/./include/localization/LocalizationManager.h
+ /home/ibrahim/OpenSource/wallppib/src/./include/localization/LocalizationManager.h \
+ /home/ibrahim/OpenSource/wallppib/src/./include/DirectoryPath.h

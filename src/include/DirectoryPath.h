@@ -4,13 +4,14 @@
 #include <filesystem>
 #include <string>
 
-namespace fs = std::filesystem;
+using namespace std;
+namespace fs = filesystem;
 
 class DirectoryPath
 {
 
 public:
-    static std::string GetDataContentsPath()
+    static string GetDataContentsPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -25,7 +26,7 @@ public:
 
             fs::path dataDirectory = currentDirectory / "src" / "data";
 
-            std::string dataStr = dataDirectory.string();
+            string dataStr = dataDirectory.string();
             return dataStr;
         }
         else // for localBuild
@@ -36,12 +37,12 @@ public:
 
             fs::path dataDirectory = srcDirectory / "data";
 
-            std::string dataStr = dataDirectory.string();
+            string dataStr = dataDirectory.string();
             return dataStr;
         }
     }
 
-    static std::string GetDataIconPath()
+    static string GetDataIconPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -51,7 +52,7 @@ public:
 
             fs::path iconsDirectory = currentDirectory / "src" / "data" / "icons";
 
-            std::string dataStr = iconsDirectory.string();
+            string dataStr = iconsDirectory.string();
             return dataStr;
         }
         else // for localBuild
@@ -63,12 +64,12 @@ public:
             fs::path dataDirectory = srcDirectory / "data";
             fs::path iconsDirectory = dataDirectory / "icons";
 
-            std::string dataStr = iconsDirectory.string();
+            string dataStr = iconsDirectory.string();
             return dataStr;
         }
     }
 
-    static std::string GetDataLocalizationPath()
+    static string GetDataLocalizationPath()
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -78,7 +79,7 @@ public:
 
             fs::path iconsDirectory = currentDirectory / "src" / "data" / "locales";
 
-            std::string dataStr = iconsDirectory.string();
+            string dataStr = iconsDirectory.string();
             return dataStr;
         }
         else // for localBuild
@@ -90,9 +91,31 @@ public:
             fs::path dataDirectory = srcDirectory / "data";
             fs::path iconsDirectory = dataDirectory / "locales";
 
-            std::string dataStr = iconsDirectory.string();
+            string dataStr = iconsDirectory.string();
             return dataStr;
         }
+    }
+
+    static void OpenContainingFolder(const string &file_path)
+    {
+        string folder_path = get_folder_path(file_path);
+
+#ifdef _WIN32
+        string command = "explorer \"" + folder_path + "\"";
+#elif __APPLE__
+        string command = "open \"" + folder_path + "\"";
+#else
+        string command = "xdg-open \"" + folder_path + "\"";
+#endif
+
+        system(command.c_str());
+    }
+
+private:
+    static string get_folder_path(const string &file_path)
+    {
+        size_t found = file_path.find_last_of("/\\");
+        return file_path.substr(0, found);
     }
 };
 

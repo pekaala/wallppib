@@ -83,31 +83,89 @@ CMakeFiles/wallppib.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wallppib.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/OpenSource/wallppib/src/main.cpp -o CMakeFiles/wallppib.dir/src/main.cpp.s
 
-CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o: CMakeFiles/wallppib.dir/flags.make
-CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o: ../src/wallpaperengine.cpp
-CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o: CMakeFiles/wallppib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ibrahim/OpenSource/wallppib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o -MF CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o.d -o CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o -c /home/ibrahim/OpenSource/wallppib/src/wallpaperengine.cpp
+CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o: CMakeFiles/wallppib.dir/flags.make
+CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o: ../src/wallpapermanager.cpp
+CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o: CMakeFiles/wallppib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ibrahim/OpenSource/wallppib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o -MF CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o.d -o CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o -c /home/ibrahim/OpenSource/wallppib/src/wallpapermanager.cpp
 
-CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ibrahim/OpenSource/wallppib/src/wallpaperengine.cpp > CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.i
+CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ibrahim/OpenSource/wallppib/src/wallpapermanager.cpp > CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.i
 
-CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/OpenSource/wallppib/src/wallpaperengine.cpp -o CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.s
+CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/OpenSource/wallppib/src/wallpapermanager.cpp -o CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.s
 
 # Object files for target wallppib
 wallppib_OBJECTS = \
 "CMakeFiles/wallppib.dir/src/main.cpp.o" \
-"CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o"
+"CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o"
 
 # External object files for target wallppib
 wallppib_EXTERNAL_OBJECTS =
 
 wallppib: CMakeFiles/wallppib.dir/src/main.cpp.o
-wallppib: CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o
+wallppib: CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o
 wallppib: CMakeFiles/wallppib.dir/build.make
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libSM.so
+wallppib: /usr/lib/x86_64-linux-gnu/libICE.so
+wallppib: /usr/lib/x86_64-linux-gnu/libX11.so
+wallppib: /usr/lib/x86_64-linux-gnu/libXext.so
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
+wallppib: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 wallppib: CMakeFiles/wallppib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ibrahim/OpenSource/wallppib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable wallppib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wallppib.dir/link.txt --verbose=$(VERBOSE)

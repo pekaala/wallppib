@@ -1,0 +1,33 @@
+name: wallppib
+version: '1.1.1'
+summary: wallppib - A wallpaper changer for Linux
+description: |
+  wallppib is a wallpaper changer for Linux.
+
+confinement: strict
+base: core20
+
+apps:
+  yourapp:
+    command: build/wallppib
+    plugs:
+      - desktop
+      - desktop-legacy
+
+parts:
+  yourapp:
+    plugin: cmake
+    source: https://github.com/pekaala/wallppib.git
+  build-packages:
+    - build-essential
+    - cmake
+    - pkg-config
+    - libgtk-3-dev
+    - libopencv-dev
+    - libmagick++-dev
+    - libx11-dev
+  stage-packages:
+    - libgtk-3-0
+    - libopencv4
+    - libmagick++-6.q16-8
+    - libx11-6

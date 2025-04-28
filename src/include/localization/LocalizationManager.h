@@ -12,8 +12,8 @@
 using namespace std;
 using json = nlohmann::json;
 
-const std::string defaultSelectedLanguage = "en-US";
-const std::string key_DefaultSelectedLanguage = "selected_language";
+const string defaultSelectedLanguage = "en-US";
+const string key_DefaultSelectedLanguage = "selected_language";
 
 class LocalizationManager
 {
@@ -44,17 +44,17 @@ public:
         localizableViews.push_back(view);
     }
 
-    const std::string GetKey(const std::string &key)
+    const string GetKey(const string &key)
     {
         return getKey(key);
     }
 
-    const std::map<std::string, std::string> &GetLanguages() const
+    const map<string, string> &GetLanguages() const
     {
         return supportedLanguages;
     }
 
-    std::string GetSelectedLanguageCode(const std::string &code = "") const
+    string GetSelectedLanguageCode(const string &code = "") const
     {
         return currentLanguage;
     }
@@ -64,18 +64,18 @@ public:
         loadSelectedLanguageFromFile();
     }
 
-    void ChangeLanguage(const std::string &code)
+    void ChangeLanguage(const string &code)
     {
         saveLanguageFromFile(code);
     }
 
 private:
-    std::string currentLanguage;
+    string currentLanguage;
     map<string, string> supportedLanguages;
     json langKeyValues;
-    std::vector<ILocalization *> localizableViews;
+    vector<ILocalization *> localizableViews;
 
-    const std::string getKey(const std::string &key)
+    const string getKey(const string &key)
     {
         if (langKeyValues.contains(key))
         {
@@ -88,10 +88,10 @@ private:
     {
         try
         {
-            std::string filePath = DirectoryPath::GetDataLocalizationPath();
-            std::string combinePath = filePath + "/data.json";
+            string filePath = DirectoryPath::GetDataLocalizationPath();
+            string combinePath = filePath + "/data.json";
 
-            std::ifstream file(combinePath);
+            ifstream file(combinePath);
             if (!file.is_open())
             {
                 Log("Error: Could not open the file! readDataSelectedLanguageValue");
@@ -103,7 +103,7 @@ private:
 
             if (jsonData.contains(key_DefaultSelectedLanguage))
             {
-                std::string selectedLang = jsonData[key_DefaultSelectedLanguage].get<std::string>();
+                string selectedLang = jsonData[key_DefaultSelectedLanguage].get<string>();
                 currentLanguage = selectedLang;
                 return;
             }
@@ -113,7 +113,7 @@ private:
                 currentLanguage = defaultSelectedLanguage;
             }
         }
-        catch (const std::exception &e)
+        catch (const exception &e)
         {
             Log(e.what());
         }
@@ -126,10 +126,10 @@ private:
             if (currentLanguage.empty())
                 return;
 
-            std::string filePath = DirectoryPath::GetDataLocalizationPath();
-            std::string combinePath = filePath + "/" + currentLanguage + ".json";
+            string filePath = DirectoryPath::GetDataLocalizationPath();
+            string combinePath = filePath + "/" + currentLanguage + ".json";
 
-            std::ifstream file(combinePath);
+            ifstream file(combinePath);
             if (!file.is_open())
             {
                 Log("Error: Could not open the file! loadLanguageValues");
@@ -137,26 +137,26 @@ private:
             }
             file >> langKeyValues;
             file.close();
-            Log(currentLanguage + std::to_string(langKeyValues.size()));
+            Log(currentLanguage + to_string(langKeyValues.size()));
         }
-        catch (const std::exception &e)
+        catch (const exception &e)
         {
             Log(e.what());
         }
     }
 
-    void saveLanguageFromFile(const std::string &code)
+    void saveLanguageFromFile(const string &code)
     {
         try
         {
-            std::string filePath = DirectoryPath::GetDataLocalizationPath();
-            std::string combinePath = filePath + "/data.json";
+            string filePath = DirectoryPath::GetDataLocalizationPath();
+            string combinePath = filePath + "/data.json";
 
             json jsonData;
             jsonData["selected_language"] = code;
             jsonData["default_language"] = defaultSelectedLanguage;
 
-            std::ofstream outFile(combinePath);
+            ofstream outFile(combinePath);
             if (outFile.is_open())
             {
                 outFile << jsonData.dump(4);
@@ -177,7 +177,7 @@ private:
                 Log("Warning: Cannot proceed, the file is not active.");
             }
         }
-        catch (const std::exception &e)
+        catch (const exception &e)
         {
             Log(e.what());
         }

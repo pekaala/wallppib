@@ -1,33 +1,31 @@
 {
-  "version": "0.2.0",
+  "version": 4,
   "configurations": [
     {
-      "name": "C++ Linux Debug",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/build/wallppib", // Uygulamanızın çalıştırılabilir dosyası
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": true, // Debug sırasında dış bir terminal açar
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/gtkmm-3.0",
+        "/usr/include/c++/7",
+        "/usr/include/gtk-3.0",
+        "/usr/include/gdkmm-3.0",
+        "/usr/include/cairomm-1.0",
+        "/usr/include/sigc++-2.0",
+        "/usr/include/glibmm-2.4"
       ],
-      "miDebuggerPath": "/usr/bin/gdb", // GDB'nin yolu
-      "preLaunchTask": "build", // `tasks.json`'deki build görevini çalıştır
-      "sourceFileMap": {
-        "/usr/include": "${workspaceFolder}/include" // Başlık dosyalarının bulunduğu yol
-      },
-      "serverStarted": "",
-      "filterStderr": false,
-      "filterStdout": false,
-      "args": []
+      "defines": [],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "linux-gcc-x64",
+      "browse": {
+        "path": [
+          "/usr/include/gtkmm-3.0",
+          "/usr/include/c++/7",
+          "/usr/include/gtk-3.0"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
     }
   ]
 }

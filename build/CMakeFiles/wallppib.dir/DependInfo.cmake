@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ibrahim/OpenSource/wallppib/src/main.cpp" "CMakeFiles/wallppib.dir/src/main.cpp.o" "gcc" "CMakeFiles/wallppib.dir/src/main.cpp.o.d"
-  "/home/ibrahim/OpenSource/wallppib/src/wallpaperengine.cpp" "CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o" "gcc" "CMakeFiles/wallppib.dir/src/wallpaperengine.cpp.o.d"
+  "/home/ibrahim/OpenSource/wallppib/src/wallpapermanager.cpp" "CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o" "gcc" "CMakeFiles/wallppib.dir/src/wallpapermanager.cpp.o.d"
   )
 
 # Targets to which this target links.

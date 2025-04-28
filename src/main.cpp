@@ -1,12 +1,11 @@
 #include <gtkmm.h>
 #include "./include/views/AppbarView.h"
-#include "./include/Windowsize.h"
+#include "./include/common/WindowSize.h"
 #include "./include/Log.h"
 #include "./include/localization/LocalizationManager.h"
+#include "./include/DirectoryPath.h"
 
-// linux:  g++ -std=c++17 main.cpp wallpaperengine.cpp -o localbuild/wallppib `pkg-config --cflags --libs gtkmm-3.0`
-
-// linux vcpkg:  g++ -std=c++17 main.cpp wallpaperengine.cpp -o localbuild/wallppib -I/home/user/vcpkg/installed/x64-linux/include `pkg-config --cflags --libs gtkmm-3.0`
+// linux vcpkg: g++ -std=c++17 main.cpp wallpapermanager.cpp -o localbuild/wallppib -I/home/user/vcpkg/installed/x64-linux/include `pkg-config --cflags --libs gtkmm-3.0 opencv4 Magick++ ` -lX11
 
 int main(int argc, char *argv[])
 {
@@ -14,11 +13,13 @@ int main(int argc, char *argv[])
     {
         Log("application start");
 
-        Windowsize winSize;
+        WindowSize winSize;
 
         auto app = Gtk::Application::create(argc, argv, winSize.appName);
 
         AppbarView AppbarView(winSize);
+
+        // Gtk::Main::run();
 
         return app->run(AppbarView);
     }

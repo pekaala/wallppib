@@ -9,18 +9,19 @@
 #include <ctime>
 #include "Log.h"
 
+using namespace std;
 namespace fs = std::filesystem;
 
 class Log
 {
 public:
-    Log(const std::string &message)
+    Log(const string &message)
     {
         log_error(message);
     }
 
 private:
-    void log_error(const std::string &message)
+    void log_error(const string &message)
     {
         fs::path currentDirectory = fs::absolute(fs::current_path());
 
@@ -37,28 +38,28 @@ private:
             fs::create_directories(logsDirectory);
         }
 
-        std::string logFilePath = logsDirectory.string() + "/errors.log";
+        string logFilePath = logsDirectory.string() + "/errors.log";
 
-        std::ofstream logFile(logFilePath, std::ios::app);
+        ofstream logFile(logFilePath, ios::app);
         if (logFile.is_open())
         {
-            logFile << get_current_time() << " - " << message << std::endl;
+            logFile << get_current_time() << " - " << message << endl;
             logFile.close();
         }
         else
         {
-            std::cerr << "Error (" << logFilePath << ")" << std::endl;
+            cerr << "Error (" << logFilePath << ")" << endl;
         }
     }
 
-    std::string get_current_time()
+    string get_current_time()
     {
-        std::time_t now = std::time(nullptr);
-        std::tm *ltm = std::localtime(&now);
+        time_t now = time(nullptr);
+        tm *ltm = localtime(&now);
 
         char buffer[20];
-        std::strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", ltm);
-        return std::string(buffer);
+        strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", ltm);
+        return string(buffer);
     }
 };
 
