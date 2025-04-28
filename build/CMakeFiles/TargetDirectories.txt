@@ -1,7 +1,0 @@
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/wallppib.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/edit_cache.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/rebuild_cache.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/list_install_components.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/install.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/install/local.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/install/strip.dir
