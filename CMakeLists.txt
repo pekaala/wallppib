@@ -18,6 +18,8 @@ add_executable(wallppib ${SOURCES})
 if(UNIX)
     message(STATUS "Building for Linux")
 
+    include_directories(${CMAKE_SOURCE_DIR}/include)
+
     # GTKMM
     find_package(PkgConfig REQUIRED)
     pkg_check_modules(GTKMM gtkmm-3.0)
