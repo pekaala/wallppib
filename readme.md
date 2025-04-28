@@ -28,22 +28,9 @@ sudo apt-get install libgtkmm-3.0-dev
 ## In Progress Properties
 
 - **GIF Support**: Implementing functionality to handle Gif.
-- **UI**:Dynamic UI.
 - **Flatpak & Snap (Snappy)**: Support for seamless installation and integration, providing two package distribution methods.
-  
 - **Localization**: Supporting multiple languages including English, Turkish, and more. (completed)
-
-#### Supported Languages
-
-| Language | Status                                                                                    |
-| -------- | ----------------------------------------------------------------------------------------- |
-| English  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/en-US.json)                      |
-| Turkish  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/tr-TR.json)                      |
-| Spanish  | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/es-ES.json) |
-| French   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/fr-FR.json) |
-| German   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/de-DE.json) |
-
-![Example GIF](https://github.com/pekaala/wallppib/blob/main/sc/versions/1.1.0/localizationwork.gif)
+- **UI**:Dynamic UI.(completed)
 
 ## Upcoming Features
 
@@ -63,8 +50,31 @@ sudo apt-get install libgtkmm-3.0-dev
 
 - **Windows**: Not working yet.
 
-## Screenshots (for linux)
+# Versions
 
+## 1.1.1
+
+![Image 1 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.1.1/1.png)
+
+![Image 2 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.1.1/2.png)
+
+![Image 3 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.1.1/3.png)
+
+## 1.1.0
+
+### Image 1
+
+![Image 1 Description](https://github.com/pekaala/wallppib/blob/main/sc/versions/1.1.0/localizationwork.gif)
 ![Explore.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_explore.png)
 
 ![About.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_about.png 'sc_about')
+
+#### Supported Languages
+
+| Language | Status                                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| English  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/en-US.json)                      |
+| Turkish  | Available [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/tr-TR.json)                      |
+| Spanish  | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/es-ES.json) |
+| French   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/fr-FR.json) |
+| German   | Available (translated with AI) [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/de-DE.json) |
