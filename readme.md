@@ -72,10 +72,11 @@ sudo apt-get install libgtkmm-3.0-dev
 
 ### Image 1
 
-![Image 1 Description](https://github.com/pekaala/wallppib/blob/main/sc/versions/1.1.0/localizationwork.gif)
-![Explore.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_explore.png)
+![Image 1 Description](https://github.com/pekaala/wallppib/blob/main/screenshots/versions/1.1.0/localizationwork.gif)
 
-![About.](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/sc/sc_about.png 'sc_about')
+![Explore.](https://github.com/pekaala/wallppib/blob/main/screenshots/sc_explore.png)
+
+![About.](https://github.com/pekaala/wallppib/blob/main/screenshots/sc_about.png)
 
 #### Supported Languages
 
