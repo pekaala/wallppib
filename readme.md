@@ -13,7 +13,7 @@ sudo apt-get install libgtkmm-3.0-dev
 ```
 
 ```bash
-  git clone https://github.com/username/projeniz.git
+  git clone https://github.com/pekaala/wallppib.git
   cd wallppib
 
   mkdir build
