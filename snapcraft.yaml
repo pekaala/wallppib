@@ -1,20 +1,19 @@
 name: wallppib
 version: '1.1.1'
-summary: wallppib - A wallpaper changer for Linux
+summary: wallppib - A wallpaper management for Linux
 description: |
-  wallppib is a wallpaper changer for Linux.
+  wallppib is a wallpaper management for Linux.
 
-confinement: strict
 base: core20
+confinement: strict
 
 apps:
-  myapp:
+  wallppib:
     command: usr/local/bin/wallppib
-    environment:
-      LD_LIBRARY_PATH: $SNAP/usr/lib:$SNAP/usr/lib/x86_64-linux-gnu:$SNAP/lib/x86_64-linux-gnu
     plugs:
       - desktop
       - desktop-legacy
+      - home
 
 parts:
   nlohmann-json:
@@ -24,7 +23,7 @@ parts:
     organize:
       json-3.11.2/single_include/nlohmann: include/nlohmann
 
-  myapp:
+  wallppib:
     plugin: cmake
     source: https://github.com/pekaala/wallppib.git
     build-packages:
@@ -50,8 +49,11 @@ parts:
       - libpangomm-1.4-1v5
       - libsigc++-2.0-0v5
       - libblas3
-      - libblas-dev
+      - liblapack3
+    organize:
+      usr/lib/*-linux-gnu/blas/*: usr/lib/
+      usr/lib/*-linux-gnu/lapack/*: usr/lib/
     after:
       - nlohmann-json
     build-environment:
-      - CXXFLAGS: '-I${SNAPCRAFT_STAGE}/include'
+      - CXXFLAGS: '-I${SNAPCRAFT_STAGE}/include -Wl,-rpath=$ORIGIN/../lib'

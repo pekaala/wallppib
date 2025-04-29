@@ -31,7 +31,18 @@ private:
         }
 
         fs::path srcDirectory = currentDirectory / "src";
-        fs::path logsDirectory = srcDirectory / "logs";
+
+        const char *snapUserCommon = std::getenv("SNAP_USER_COMMON");
+        fs::path logsDirectory;
+
+        if (snapUserCommon)
+        {
+            logsDirectory = fs::path(snapUserCommon) / "logs";
+        }
+        else
+        {
+            logsDirectory = srcDirectory / "logs";
+        }
 
         if (!fs::exists(logsDirectory))
         {
