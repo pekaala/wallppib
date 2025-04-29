@@ -2,8 +2,8 @@
 Name=Wallppib
 Comment=app wallppib
 Keywords=wallpaper; settings; preferences;
-Icon=/System/Resources/Komorebi/wallpaper_creator.svg
-Exec=/System/Applications/komorebi-wallpaper-creator
+Icon=/****
+Exec=/****
 Terminal=false
 Type=Application
 StartupNotify=true

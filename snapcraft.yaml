@@ -9,7 +9,7 @@ base: core20
 
 apps:
   myapp:
-    command: bin/wallppib
+     command: usr/local/bin/wallppib
     plugs:
       - desktop
       - desktop-legacy
@@ -45,6 +45,3 @@ parts:
       - nlohmann-json
     build-environment:
       - CXXFLAGS: '-I${SNAPCRAFT_STAGE}/include'
-    override-build: |
-      snapcraftctl build
-      install -D build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib

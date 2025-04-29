@@ -2,8 +2,8 @@
 Name=Wallppib
 Comment=
 Keywords=wallpaper;settings; preferences;
-Icon=/System/Resources/Komorebi/komorebi.svg
-Exec=/System/Applications/komorebi
+Icon=/****
+Exec=/****
 Terminal=false
 Type=Application
 StartupNotify=true
