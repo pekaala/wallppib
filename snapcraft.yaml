@@ -9,7 +9,9 @@ base: core20
 
 apps:
   myapp:
-     command: usr/local/bin/wallppib
+    command: usr/local/bin/wallppib
+    environment:
+      LD_LIBRARY_PATH: $SNAP/usr/lib:$SNAP/usr/lib/x86_64-linux-gnu:$SNAP/lib/x86_64-linux-gnu
     plugs:
       - desktop
       - desktop-legacy
@@ -40,7 +42,15 @@ parts:
       - libmagick++-6.q16-8
       - libopencv-core4.2
       - libopencv-imgproc4.2
-      - libopencv-highgui4.2
+      - libopencv-imgcodecs4.2
+      - libgtkmm-3.0-1v5
+      - libatkmm-1.6-1v5
+      - libcairomm-1.0-1v5
+      - libglibmm-2.4-1v5
+      - libpangomm-1.4-1v5
+      - libsigc++-2.0-0v5
+      - libblas3
+      - libblas-dev
     after:
       - nlohmann-json
     build-environment:
