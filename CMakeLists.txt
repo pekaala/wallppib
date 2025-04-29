@@ -9,9 +9,13 @@ set(SOURCES
     src/wallpapermanager.cpp
 )
 
-set(CMAKE_TOOLCHAIN_FILE /home/ibrahim/vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "")
 
+if(NOT DEFINED ENV{SNAPCRAFT})
+set(CMAKE_TOOLCHAIN_FILE /home/ibrahim/vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "")
 include_directories(/home/ibrahim/vcpkg/installed/x64-linux/include)
+endif()
+
+install(TARGETS wallppib DESTINATION bin)
 
 add_executable(wallppib ${SOURCES})
 
@@ -69,3 +73,7 @@ if(UNIX)
    message(STATUS "Finished building for Linux")
 
 endif()
+
+install(TARGETS wallppib
+    RUNTIME DESTINATION bin
+)

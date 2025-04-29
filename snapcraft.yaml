@@ -9,7 +9,7 @@ base: core20
 
 apps:
   myapp:
-    command: build/wallppib
+    command: bin/wallppib
     plugs:
       - desktop
       - desktop-legacy
@@ -20,7 +20,7 @@ parts:
     source: https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
     source-type: tar
     organize:
-      json-3.11.2/json.hpp: include/nlohmann/json.hpp
+      json-3.11.2/single_include/nlohmann: include/nlohmann
 
   myapp:
     plugin: cmake
@@ -41,5 +41,10 @@ parts:
       - libopencv-core4.2
       - libopencv-imgproc4.2
       - libopencv-highgui4.2
+    after:
+      - nlohmann-json
     build-environment:
-      - CXXFLAGS: '-I${SNAP}/include'
+      - CXXFLAGS: '-I${SNAPCRAFT_STAGE}/include'
+    override-build: |
+      snapcraftctl build
+      install -D build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
