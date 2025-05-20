@@ -76,9 +76,9 @@ Translated with AI
 
 ## 1.2.1
 
-![Image 1 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.2.1/1.png)
+![Image 1 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.2.1/one_img.png)
 
-![Image 2 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.2.1/2.png)
+![Image 2 Description](https://raw.githubusercontent.com/pekaala/wallppib/refs/heads/main/screenshots/versions/1.2.1/two_img.png)
 
 ## 1.1.1
 
