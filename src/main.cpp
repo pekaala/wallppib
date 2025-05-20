@@ -12,7 +12,7 @@
 
 /*linux vcpkg:
 
-g++ -std=c++17 main.cpp core/wallpaper_manager.cpp utils/log.cpp  utils/localization/localization_manager.cpp  utils/settings.cpp  utils/directory_path.cpp ui/alerts/message.cpp ui/indicators/app_indicator_impression.cpp ui/about_window.cpp ui/app_bar_window.cpp ui/home_window.cpp ui/settings_window.cpp -o localbuild/wallppib -I/home/ibrahim/vcpkg/installed/x64-linux/include `pkg-config --cflags --libs gtkmm-3.0 opencv4 Magick++ ayatana-appindicator3-0.1` -lX11
+g++ -std=c++17 main.cpp core/wallpaper_manager.cpp utils/log.cpp  utils/localization/localization_manager.cpp  utils/settings.cpp  utils/directory_path.cpp ui/alerts/message.cpp ui/indicators/app_indicator_impression.cpp ui/about_window.cpp ui/app_bar_window.cpp ui/home_window.cpp ui/settings_window.cpp -o localbuild/wallppib -I/home/user/vcpkg/installed/x64-linux/include `pkg-config --cflags --libs gtkmm-3.0 opencv4 Magick++ ayatana-appindicator3-0.1` -lX11
 
 */
 
