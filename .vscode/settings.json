@@ -88,5 +88,6 @@
     "syncstream": "cpp",
     "typeindex": "cpp",
     "variant": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

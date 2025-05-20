@@ -1,3 +1,0 @@
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/wallppib.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/edit_cache.dir
-/home/ibrahim/OpenSource/wallppib/build/CMakeFiles/rebuild_cache.dir

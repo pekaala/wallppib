@@ -1,0 +1,9 @@
+Makefile linguist-vendored
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
+
+# VS Code configs
+.vscode/* linguist-vendored
+
+# Ignore TypeScript if it’s not core to the project
+*.ts linguist-vendored
