@@ -50,21 +50,24 @@ void WallpaperManager::set_wallpaper_linux(const string &imagePath)
         {
             Log("Detected > GNOME");
 
-            /*system("killall xwinwrap gifview");
             if (is_gif(imagePath))
             {
+                this_thread::sleep_for(chrono::milliseconds(3));
                 int width, height;
                 get_screen_geometry_value(width, height);
 
+                system("killall xwinwrap gifview");
+                this_thread::sleep_for(chrono::milliseconds(5));
+
                 string xwinwrapCommand =
                     "xwinwrap -g " + to_string(width) + "x" + to_string(height) + "+0+0 "
-                                                                                  "-ni -s -nf -b -un -sh -fs -- "
+                                                                                  "-ni -argb -fs -s -st -sp -b -un -nf -- "
                                                                                   "gifview -w WID \"" +
                     imagePath + "\" -a &";
 
                 system(xwinwrapCommand.c_str());
                 return;
-            }*/
+            }
 
             string command = "gsettings set org.gnome.desktop.background picture-uri-dark '" + imagePath + "'";
             int result = system(command.c_str());

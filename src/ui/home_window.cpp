@@ -222,11 +222,11 @@ void HomeWindow::on_select_image()
     filter_image->set_name(localization_Manager.get_key("image_files"));
     filter_image->add_mime_type("image/png");
     filter_image->add_mime_type("image/jpeg");
-    // filter_image->add_mime_type("image/gif");
+    filter_image->add_mime_type("image/gif");
     filter_image->add_pattern("*.png");
     filter_image->add_pattern("*.jpg");
     filter_image->add_pattern("*.jpeg");
-    // filter_image->add_pattern("*.gif");
+    filter_image->add_pattern("*.gif");
     dialog.add_filter(filter_image);
 
     auto filter_any = Gtk::FileFilter::create();

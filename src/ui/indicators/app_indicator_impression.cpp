@@ -46,6 +46,7 @@ void AppIndicatorImpression::on_show()
 
 void AppIndicatorImpression::on_quit()
 {
+    system("killall xwinwrap gifview");
     app->get_default()->quit();
 }
 

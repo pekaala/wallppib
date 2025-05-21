@@ -8,6 +8,10 @@ AppBarWindow::AppBarWindow(WindowSize winSize, Glib::RefPtr<Gtk::Application> ap
 
     m_VBox.pack_start(m_Notebook, Gtk::PACK_EXPAND_WIDGET);
 
+    string iconPath = DirectoryPath::get_data_icon_path();
+
+    set_icon_from_file(iconPath + "/indi_wllp.svg");
+
     about_window = new AboutWindow(localization_Manager);
     home_window = new HomeWindow(localization_Manager);
     settings_window = new SettingsWindow(localization_Manager);

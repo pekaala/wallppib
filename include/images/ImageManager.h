@@ -27,15 +27,17 @@ public:
 
     bool AddImage(const string &selectedFilePath)
     {
-        return copyImageFile(selectedFilePath);
+        return copy_image_file(selectedFilePath);
     }
 
     bool DeleteImage(const string &selectedFilePath)
     {
-        return deleteImageFile(selectedFilePath);
+        return delete_image_file(selectedFilePath);
     }
 
 private:
+    std::list<Magick::Image> frames;
+
     void loadImageFile()
     {
         try
@@ -79,7 +81,7 @@ private:
         }
     }
 
-    bool copyImageFile(const string &selectedFilePath)
+    bool copy_image_file(const string &selectedFilePath)
     {
         try
         {
@@ -93,15 +95,38 @@ private:
 
             fs::copy_file(selectedFilePath, destinationPath, fs::copy_options::overwrite_existing);
 
+            string resizedPath = folderPath + "/resized_" + fileName;
             if (Settings::read_settings_flag_from_disk())
             {
                 try
                 {
-                    Magick::Image image(destinationPath);
+                    if (is_gif(destinationPath))
+                    {
+                        thread([destinationPath]()
+                               {
+                                   string cmd = "convert \"" + destinationPath + "\" -coalesce -resize 1920x1080 \"" + destinationPath + "\"";
+                                   int result = std::system(cmd.c_str());
 
-                    image.resize(Magick::Geometry(1920, 1080));
+                                   if (result != 0)
+                                   {
+                                       Log("ImageMagick convert failed.");
+                                       return false;
+                                   }
+                                   else
+                                   {
+                                       return true;
+                                   }
+                               })
+                            .detach();
+                    }
+                    else
+                    {
+                        Magick::Image image(destinationPath);
 
-                    image.write(destinationPath);
+                        image.resize(Magick::Geometry(1920, 1080));
+
+                        image.write(destinationPath);
+                    }
                 }
                 catch (const exception &e)
                 {
@@ -119,7 +144,7 @@ private:
         }
     }
 
-    bool deleteImageFile(const string &selectedFilePath)
+    bool delete_image_file(const string &selectedFilePath)
     {
         try
         {
@@ -134,6 +159,11 @@ private:
             Log(e.what());
             return false;
         }
+    }
+
+    bool is_gif(const string &imagePath)
+    {
+        return imagePath.size() > 4 && imagePath.substr(imagePath.size() - 4) == ".gif";
     }
 };
 

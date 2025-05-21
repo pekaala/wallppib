@@ -57,8 +57,24 @@ int main(int argc, char *argv[])
 
         auto app = Gtk::Application::create(argc, argv, winSize.appName);
 
-        AppBarWindow AppBarWindow(winSize, app);
-        return app->run(AppBarWindow);
+        Gtk::Window window;
+        window.set_default_size(800, 600);
+        window.set_title("Uygulama Başlığı");
+        window.set_icon_name("/home/ibrahim/OpenSource/wallppib/src/data/icons/ICdelete.png");
+        /*try
+        {
+            window.set_default_icon_from_file("/home/ibrahim/OpenSource/wallppib/src/data/icons/ICdelete.png");
+            window.set_icon_from_file("/home/ibrahim/OpenSource/wallppib/src/data/icons/ICdelete.png");
+        }
+        catch (const Glib::FileError &e)
+        {
+            Log("error");
+        }*/
+
+        return app->run(window);
+
+        /*AppBarWindow AppBarWindow(winSize, app);
+        return app->run(AppBarWindow);*/
     }
     catch (const std::exception &e)
     {
