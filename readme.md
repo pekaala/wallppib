@@ -32,6 +32,7 @@ sudo apt-get install libgtkmm-3.0-dev
 - **Add Image**: Users can add new images.
 - **Delete Image**: Images can be easily deleted.
 - **Resize to 1920x1080**: Images are automatically resized to 1920x1080 resolution.
+- **App Status**: Processing Indicator.
 
 ## In Progress Properties
 
