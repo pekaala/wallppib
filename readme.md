@@ -72,7 +72,10 @@ Translated with AI
 - Turkish [Help improve translation](https://github.com/pekaala/wallppib/blob/main/src/data/locales/tr-TR.json)
 </details>
 
-# Versions
+## Versions
+
+<details>
+  <summary>See Details</summary>
 
 ## 1.2.1
 
@@ -97,3 +100,5 @@ Translated with AI
 ![Explore.](https://github.com/pekaala/wallppib/blob/main/screenshots/sc_explore.png)
 
 ![About.](https://github.com/pekaala/wallppib/blob/main/screenshots/sc_about.png)
+
+</details>
