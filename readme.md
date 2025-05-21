@@ -53,7 +53,7 @@ sudo apt-get install libgtkmm-3.0-dev
 
 ### Tested
 
-- **Ubuntu**: Fully tested and working.
+- **Ubuntu**: Fully tested and working. Version Ubuntu 22.04 LTS
 
 ### Un Tested
 
