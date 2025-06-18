@@ -25,6 +25,7 @@ sudo apt-get install libgtkmm-3.0-dev
   ./wallppib
 ```
 
+<!--
 ## V1.1.1
 
 ### Features
@@ -33,6 +34,7 @@ sudo apt-get install libgtkmm-3.0-dev
 - **Delete Image**: Images can be easily deleted.
 - **Resize to 1920x1080**: Images are automatically resized to 1920x1080 resolution.
 - **App Status**: Processing Indicator.
+-->
 
 ## In Progress Properties
 
