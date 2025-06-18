@@ -15,19 +15,21 @@ slots:
 
 apps:
   wallppib:
-    command: usr/local/bin/wallppib
+    command: bin/wallppib
     plugs:
       - desktop
       - desktop-legacy
       - home
       - x11
       - wayland
+      - unity7
     slots:
       - wallppib
     environment:
       LC_ALL: C.UTF-8
       LANG: C.UTF-8
       GDK_PIXBUF_MODULE_FILE: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
+      XDG_DATA_DIRS: '$SNAP/usr/share:$XDG_DATA_DIRS'
 
 parts:
   nlohmann-json:
@@ -49,7 +51,9 @@ parts:
       - libopencv-dev
       - libmagick++-dev
       - libx11-dev
-      - libgdk-pixbuf2.0-bin
+      - libgdk-pixbuf2.0-dev
+      - libayatana-appindicator3-dev
+      - libpthread-stubs0-dev
     stage-packages:
       - libgtk-3-0
       - libx11-6
@@ -68,14 +72,28 @@ parts:
       - libgdk-pixbuf2.0-0
       - shared-mime-info
       - adwaita-icon-theme
+      - libayatana-appindicator3-1
     organize:
       usr/lib/*-linux-gnu/blas/*: usr/lib/
       usr/lib/*-linux-gnu/lapack/*: usr/lib/
     override-build: |
-      snapcraftctl build
+      export CXXFLAGS="$CXXFLAGS -pthread"
+      export LDFLAGS="$LDFLAGS -lpthread -Wl,--no-as-needed"
+
+      cmake -B build -S . \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS="-pthread" \
+        -DCMAKE_EXE_LINKER_FLAGS="-lpthread -Wl,--no-as-needed"
+      cmake --build build --parallel $(nproc)
+
+      install -D build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
+
+      # Gdk-pixbuf loader setup
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0
       gdk-pixbuf-query-loaders > $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
+
+      ln -s /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/
+
+      update-mime-database $SNAPCRAFT_PART_INSTALL/usr/share/mime
     after:
       - nlohmann-json
-    build-environment:
-      - CXXFLAGS: '-I${SNAPCRAFT_STAGE}/include -Wl,-rpath=$ORIGIN/../lib'

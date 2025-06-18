@@ -7,7 +7,9 @@ using namespace std;
 
 struct WindowSize
 {
+    const string appId = "com.wallppib";
     const string appName = "wallppib";
+
     const string version = "1.2.1";
 
     const int W = 1300;

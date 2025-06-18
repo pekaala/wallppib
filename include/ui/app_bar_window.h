@@ -2,9 +2,6 @@
 #define APP_BAR_WINDOW_H
 
 #include <gtkmm.h>
-#include <gtkmm/notebook.h>
-#include <gtkmm/label.h>
-#include <gtkmm/iconinfo.h>
 #include <iostream>
 #include "about_window.h"
 #include "home_window.h"
@@ -38,7 +35,7 @@ private:
     LocalizationManager localization_Manager;
 
 protected:
-    void header_bar();
+    void apply_header_bar_menu();
     void on_about_dialog();
     void on_settings_dialog();
     bool send_background_app(GdkEventAny *event);

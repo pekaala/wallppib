@@ -28,5 +28,11 @@
   "all_files": "All Files",
   "select_image": "Select Image",
   "close": "Close",
-  "automatically_resize_image": "Force images to be resized to 1920x1080"
+  "automatically_resize_image": "Force images to be resized to 1920x1080",
+  "play_gif": "Play gif",
+  "loading_file": "Uploading...",
+  "filter_all": "All",
+  "playing": "Playing",
+  "error_x11": "GIF feature is only supported on Wayland !!",
+  "success": "Success"
 }

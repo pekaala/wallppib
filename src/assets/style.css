@@ -1,0 +1,62 @@
+.outlined {
+  border: 1px solid rgb(74, 75, 75);
+  border-radius: 4px;
+  background-color: #222;
+  padding: 4px;
+}
+
+.outlined-button {
+  border: 1px solid rgb(74, 75, 75);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.image-type-label {
+  background-color: #333;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 9pt;
+}
+
+.image-type-label.jpg {
+  background-color: #2196f3;
+}
+
+.image-type-label.png {
+  background-color: #4caf50;
+}
+
+.image-type-label.gif {
+  background-color: #ff9900;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.custom-infobox.error {
+  background-color: red;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.custom-infobox.warning {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 4px;
+  color: black;
+}
+
+.custom-infobox.success {
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.progressbar progress {
+  background-image: none;
+  background-color: #4caf50;
+}

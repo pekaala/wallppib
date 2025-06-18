@@ -1,0 +1,416 @@
+2025-06-10 18:54:58 - application start
+2025-06-10 18:54:58 - tr-TR36
+2025-06-10 18:57:01 - application start
+2025-06-10 18:57:01 - tr-TR36
+2025-06-10 20:52:42 - application start
+2025-06-10 20:52:43 - Cannot open file
+2025-06-10 20:52:43 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:52:43 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:52:43 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:52:43 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:52:52 - application start
+2025-06-10 20:52:52 - Cannot open file
+2025-06-10 20:52:52 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:52:52 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:52:52 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:52:52 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:54:36 - application start
+2025-06-10 20:54:36 - Cannot open file
+2025-06-10 20:54:36 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:54:36 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:54:36 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:54:36 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:54:37 - application start
+2025-06-10 20:54:37 - application start
+2025-06-10 20:54:37 - Another instance already running. Exiting
+2025-06-10 20:54:37 - application start
+2025-06-10 20:54:37 - Another instance already running. Exiting
+2025-06-10 20:54:37 - Cannot open file
+2025-06-10 20:54:37 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:54:37 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:54:37 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:54:37 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:55:22 - application start
+2025-06-10 20:55:22 - Cannot open file
+2025-06-10 20:55:22 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:55:22 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:55:22 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:55:22 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:56:00 - application start
+2025-06-10 20:56:01 - Cannot open file
+2025-06-10 20:56:01 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:56:01 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:56:01 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:56:01 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:56:09 - application start
+2025-06-10 20:56:10 - Cannot open file
+2025-06-10 20:56:10 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:56:10 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:56:10 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:56:10 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 20:56:15 - application start
+2025-06-10 20:56:15 - Cannot open file
+2025-06-10 20:56:15 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 20:56:15 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 20:56:15 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 20:56:15 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:18 - application start
+2025-06-10 21:01:18 - Cannot open file
+2025-06-10 21:01:18 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:18 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:18 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:18 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:32 - application start
+2025-06-10 21:01:33 - Cannot open file
+2025-06-10 21:01:33 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:33 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:33 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:33 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:41 - application start
+2025-06-10 21:01:42 - Cannot open file
+2025-06-10 21:01:42 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:42 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:42 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:42 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:47 - application start
+2025-06-10 21:01:47 - Cannot open file
+2025-06-10 21:01:47 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:47 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:47 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:47 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:49 - application start
+2025-06-10 21:01:49 - Cannot open file
+2025-06-10 21:01:49 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:49 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:49 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:49 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:53 - application start
+2025-06-10 21:01:53 - Cannot open file
+2025-06-10 21:01:53 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:01:53 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:01:53 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:01:53 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:01:59 - application start
+2025-06-10 21:02:00 - Cannot open file
+2025-06-10 21:02:00 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:02:00 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:02:00 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:02:00 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:15:24 - application start
+2025-06-10 21:15:24 - Cannot open file
+2025-06-10 21:15:24 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:15:24 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:15:24 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:15:24 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:15:28 - application start
+2025-06-10 21:15:29 - Cannot open file
+2025-06-10 21:15:29 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:15:29 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:15:29 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:15:29 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:20:29 - application start
+2025-06-10 21:20:29 - Another instance already running. Exiting
+2025-06-10 21:20:37 - application start
+2025-06-10 21:20:38 - Cannot open file
+2025-06-10 21:20:38 - Error: Could not open the file! load_active_language_from_disk
+2025-06-10 21:20:38 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-10 21:20:38 - Error: Could not open the file! read_language_code_from_config
+2025-06-10 21:20:38 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-10 21:38:53 - application start
+2025-06-10 21:38:54 - tr-TR36
+2025-06-10 21:39:30 - application start
+2025-06-10 21:39:30 - tr-TR36
+2025-06-10 21:39:43 - application start
+2025-06-10 21:39:43 - tr-TR36
+2025-06-10 21:40:08 - application start
+2025-06-10 21:40:08 - tr-TR36
+2025-06-10 21:40:22 - application start
+2025-06-10 21:40:22 - Another instance already running. Exiting
+2025-06-10 21:41:16 - application start
+2025-06-10 21:41:17 - tr-TR36
+2025-06-10 21:42:23 - application start
+2025-06-10 21:42:23 - tr-TR36
+2025-06-10 21:43:23 - application start
+2025-06-10 21:43:24 - tr-TR36
+2025-06-10 21:43:31 - application start
+2025-06-10 21:43:32 - tr-TR36
+2025-06-10 22:09:44 - application start
+2025-06-10 22:09:44 - tr-TR36
+2025-06-10 22:12:34 - application start
+2025-06-10 22:12:35 - tr-TR36
+2025-06-10 23:11:03 - application start
+2025-06-10 23:11:03 - Css File Path:.outlined {
+  border: 1px solid rgb(74, 75, 75);
+  border-radius: 4px;
+  background-color: #222;
+  padding: 4px;
+}
+
+.outlined-button {
+  border: 1px solid rgb(74, 75, 75);
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.image-type-label {
+  background-color: #333;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 9pt;
+}
+
+.image-type-label.jpg {
+  background-color: #2196f3;
+}
+
+.image-type-label.png {
+  background-color: #4caf50;
+}
+
+.image-type-label.gif {
+  background-color: #ff9900;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.custom-infobox.error {
+  background-color: red;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.custom-infobox.warning {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 4px;
+  color: black;
+}
+
+.custom-infobox.success {
+  background-color: green;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.progressbar progress {
+  background-image: none;
+  background-color: #4caf50;
+}
+
+2025-06-10 23:11:03 - tr-TR36
+2025-06-10 23:15:23 - application start
+2025-06-10 23:15:24 - Css File Path:/tmp/.mount_WallppwrWVTe/usr/share/wallppib/style.css
+2025-06-10 23:15:24 - tr-TR36
+2025-06-10 23:16:26 - application start
+2025-06-10 23:16:26 - Css File Path:/tmp/.mount_Wallpp5sxpH5/usr/share/wallppib/style.css
+2025-06-10 23:16:26 - tr-TR36
+2025-06-10 23:16:53 - application start
+2025-06-10 23:16:53 - Css File Path:/tmp/.mount_WallppjgTaiF/usr/share/wallppib/style.css
+2025-06-10 23:16:53 - tr-TR36
+2025-06-10 23:16:54 - application start
+2025-06-10 23:16:54 - application start
+2025-06-10 23:16:54 - Another instance already running. Exiting
+2025-06-10 23:16:54 - Css File Path:/tmp/.mount_WallppetCV5r/usr/share/wallppib/style.css
+2025-06-10 23:16:54 - tr-TR36
+2025-06-10 23:16:56 - application start
+2025-06-10 23:16:56 - application start
+2025-06-10 23:16:56 - Another instance already running. Exiting
+2025-06-10 23:16:56 - application start
+2025-06-10 23:16:56 - Another instance already running. Exiting
+2025-06-10 23:16:56 - Css File Path:/tmp/.mount_Wallpp1B31Ve/usr/share/wallppib/style.css
+2025-06-10 23:16:56 - tr-TR36
+2025-06-10 23:17:00 - application start
+2025-06-10 23:17:00 - Css File Path:/tmp/.mount_WallpptnGOML/usr/share/wallppib/style.css
+2025-06-10 23:17:00 - tr-TR36
+2025-06-10 23:17:10 - application start
+2025-06-10 23:17:10 - Css File Path:/tmp/.mount_WallppTuKUJk/usr/share/wallppib/style.css
+2025-06-10 23:17:10 - tr-TR36
+2025-06-10 23:20:24 - application start
+2025-06-10 23:20:24 - tr-TR36
+2025-06-10 23:20:30 - application start
+2025-06-10 23:20:31 - tr-TR36
+2025-06-10 23:29:24 - application start
+2025-06-10 23:29:34 - application start
+2025-06-10 23:40:07 - application start
+2025-06-10 23:50:40 - application start
+2025-06-11 01:31:10 - application start
+2025-06-11 01:31:11 - Css File Path:/tmp/.mount_WallppJvgWxc/usr/share/wallppib/style.css
+2025-06-11 01:31:11 - Error: Could not open the file! load_active_language_from_disk
+2025-06-11 01:31:11 - Error:/config.json
+2025-06-11 01:31:11 - Error: Could not open the file! read_language_code_from_config
+2025-06-11 01:31:11 - Error:/en-US.json
+2025-06-11 01:31:11 - Error: Invalid directory path! getImages
+2025-06-11 01:43:04 - application start
+2025-06-11 01:43:05 - Css File Path:/tmp/.mount_WallppC2eUDd/usr/share/wallppib/style.css
+2025-06-11 01:43:05 - Error: Could not open the file! read_language_code_from_config
+2025-06-11 01:43:05 - Error:/tr-TR.json
+2025-06-11 01:43:05 - Error: Invalid directory path! getImages
+2025-06-11 01:43:13 - application start
+2025-06-11 01:43:13 - Css File Path:/tmp/.mount_WallpplnJdxe/usr/share/wallppib/style.css
+2025-06-11 01:43:13 - Error: Could not open the file! read_language_code_from_config
+2025-06-11 01:43:13 - Error:/tr-TR.json
+2025-06-11 01:43:13 - Error: Invalid directory path! getImages
+2025-06-11 01:43:21 - Warning: Cannot proceed, the file is not active.
+2025-06-11 01:48:07 - application start
+2025-06-11 01:48:08 - Css File Path:/tmp/.mount_WallppRyEpu4/usr/share/wallppib/style.css
+2025-06-11 01:48:08 - tr-TR36
+2025-06-11 01:48:08 - Error: Invalid directory path! getImages
+2025-06-11 01:48:15 - Warning: Cannot proceed, the file is not active.
+2025-06-11 01:48:27 - application start
+2025-06-11 01:48:27 - Css File Path:/tmp/.mount_Wallpp6ENMfG/usr/share/wallppib/style.css
+2025-06-11 01:48:27 - tr-TR36
+2025-06-11 01:48:27 - Error: Invalid directory path! getImages
+2025-06-11 01:48:32 - Warning: Cannot proceed, the file is not active.
+2025-06-11 01:48:34 - Cannot open file for writing.
+2025-06-11 01:48:37 - Warning: Cannot proceed, the file is not active.
+2025-06-11 01:48:37 - Cannot open file for writing.
+2025-06-11 01:48:49 - application start
+2025-06-11 01:48:50 - Css File Path:/tmp/.mount_Wallppog7zIK/usr/share/wallppib/style.css
+2025-06-11 01:48:50 - tr-TR36
+2025-06-11 01:48:50 - Error: Invalid directory path! getImages
+2025-06-11 01:49:01 - application start
+2025-06-11 01:49:02 - Css File Path:/tmp/.mount_WallppitUfrg/usr/share/wallppib/style.css
+2025-06-11 01:49:02 - tr-TR36
+2025-06-11 01:49:02 - Error: Invalid directory path! getImages
+2025-06-11 01:50:11 - Cannot open file for writing.
+2025-06-11 01:50:50 - Error: Invalid directory path! getImages
+2025-06-11 01:51:06 - application start
+2025-06-11 01:51:07 - Css File Path:/tmp/.mount_WallppulWSuF/usr/share/wallppib/style.css
+2025-06-11 01:51:07 - tr-TR36
+2025-06-11 01:51:07 - Error: Invalid directory path! getImages
+2025-06-11 01:51:10 - Error: Invalid directory path! getImages
+2025-06-11 01:51:11 - Error: Invalid directory path! getImages
+2025-06-11 01:51:12 - Error: Invalid directory path! getImages
+2025-06-11 01:57:22 - application start
+2025-06-11 01:57:23 - Css File Path:/tmp/.mount_WallppsHfvhN/usr/share/wallppib/style.css
+2025-06-11 01:57:23 - tr-TR36
+2025-06-11 01:57:23 - Error: Invalid directory path! getImages
+2025-06-11 02:06:11 - application start
+2025-06-11 02:06:11 - Css File Path:/tmp/.mount_Wallpp9yo3A2/usr/share/wallppib/style.css
+2025-06-11 02:06:11 - tr-TR36
+2025-06-11 02:06:11 - Error: Invalid directory path! getImages
+2025-06-11 02:06:16 - Warning: Cannot proceed, the file is not active.
+2025-06-11 02:06:49 - application start
+2025-06-11 02:06:50 - Css File Path:/tmp/.mount_Wallppd2LPed/usr/share/wallppib/style.css
+2025-06-11 02:06:50 - tr-TR36
+2025-06-11 02:06:50 - Error: Invalid directory path! getImages
+2025-06-16 17:17:24 - application start
+2025-06-16 17:17:25 - Css File Path:/tmp/.mount_Wallppn6H8tC/usr/share/wallppib/style.css
+2025-06-16 17:17:25 - tr-TR36
+2025-06-16 17:17:25 - Error: Invalid directory path! getImages
+2025-06-16 17:17:52 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:17:52 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:23:21 - application start
+2025-06-16 17:23:22 - Css File Path:/tmp/.mount_WallppFVQnYl/usr/share/wallppib/style.css
+2025-06-16 17:23:22 - Error: Could not open the file! load_active_language_from_disk
+2025-06-16 17:23:22 - Error:/home/ibrahim/src/data/locales/config.json
+2025-06-16 17:23:22 - Error: Could not open the file! read_language_code_from_config
+2025-06-16 17:23:22 - Error:/home/ibrahim/src/data/locales/en-US.json
+2025-06-16 17:23:22 - Error: Invalid directory path! getImages
+2025-06-16 17:23:25 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:23:27 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:26:41 - application start
+2025-06-16 17:26:42 - Css File Path:/tmp/.mount_WallppJTL1EG/usr/share/wallppib/style.css
+2025-06-16 17:26:42 - tr-TR36
+2025-06-16 17:26:42 - Error: Invalid directory path! getImages
+2025-06-16 17:26:45 - application start
+2025-06-16 17:26:45 - Css File Path:/tmp/.mount_Wallpp8lxBgK/usr/share/wallppib/style.css
+2025-06-16 17:26:45 - tr-TR36
+2025-06-16 17:26:45 - Error: Invalid directory path! getImages
+2025-06-16 17:27:19 - application start
+2025-06-16 17:27:19 - Css File Path:/tmp/.mount_Wallppf5gBUh/usr/share/wallppib/style.css
+2025-06-16 17:27:19 - tr-TR36
+2025-06-16 17:27:19 - Error: Invalid directory path! getImages
+2025-06-16 17:27:25 - application start
+2025-06-16 17:27:25 - Css File Path:/tmp/.mount_Wallppx6eqMM/usr/share/wallppib/style.css
+2025-06-16 17:27:25 - tr-TR36
+2025-06-16 17:27:25 - Error: Invalid directory path! getImages
+2025-06-16 17:27:41 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:41 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:57 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:57 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:59 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:59 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:27:59 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:14 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:14 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:14 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:15 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:15 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:15 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:28:15 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:39:55 - application start
+2025-06-16 17:39:56 - Css File Path:/tmp/.mount_WallppjUAbYT/usr/share/wallppib/style.css
+2025-06-16 17:39:56 - en-US36
+2025-06-16 17:39:56 - Error: Invalid directory path! getImages
+2025-06-16 17:39:59 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:40:01 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:40:04 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:40:06 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:14 - application start
+2025-06-16 17:41:14 - Css File Path:/tmp/.mount_WallppKiVup3/usr/share/wallppib/style.css
+2025-06-16 17:41:14 - en-US36
+2025-06-16 17:41:15 - Error: Invalid directory path! getImages
+2025-06-16 17:41:17 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:41:19 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:20 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:22 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:26 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:26 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:41:28 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:28 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:30 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:30 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:45 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:45 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:45 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:41:47 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:47 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:47 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:48 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:48 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:48 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:49 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:49 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:49 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:50 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:50 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:41:50 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:42:58 - application start
+2025-06-16 17:42:59 - Css File Path:/tmp/.mount_WallppRxMIHK/usr/share/wallppib/style.css
+2025-06-16 17:42:59 - en-US36
+2025-06-16 17:42:59 - Error: Invalid directory path! getImages
+2025-06-16 17:43:02 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:43:04 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:43:14 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:43:14 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:43:16 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:43:16 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:43:18 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:43:18 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:46:08 - application start
+2025-06-16 17:46:08 - Css File Path:/tmp/.mount_WallpphHzPyi/usr/share/wallppib/style.css
+2025-06-16 17:46:08 - en-US36
+2025-06-16 17:46:08 - Error: Invalid directory path! getImages
+2025-06-16 17:46:11 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:46:13 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:46:14 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:46:16 - Save Path/tmp/.mount_WallpphHzPyi/usr/share/wallppib/locales/config.json
+2025-06-16 17:46:16 - Cannot open file for writing.
+2025-06-16 17:46:24 - application start
+2025-06-16 17:46:25 - Css File Path:/tmp/.mount_WallppZdtua3/usr/share/wallppib/style.css
+2025-06-16 17:46:25 - en-US36
+2025-06-16 17:46:25 - Error: Invalid directory path! getImages
+2025-06-16 17:46:28 - [json.exception.type_error.302] type must be boolean, but is null
+2025-06-16 17:46:29 - Warning: Cannot proceed, the file is not active.
+2025-06-16 17:55:17 - application start
+2025-06-16 17:55:18 - Css File Path:/tmp/.mount_Wallpp4CQjTC/usr/share/wallppib/style.css
+2025-06-16 17:55:18 - en-US36
+2025-06-16 17:55:18 - Error: Invalid directory path! getImages
+2025-06-16 17:55:22 - /tmp/.mount_Wallpp4CQjTC/usr/share/wallppib/locales/config.json
+2025-06-16 17:55:22 - Warning: Cannot proceed, the file is not active.

@@ -1,10 +1,6 @@
 #include "../../include/utils/log.h"
-#include <filesystem>
-#include <string>
-#include <ctime>
-
-using namespace std;
-namespace fs = std::filesystem;
+#include <fstream>
+#include <iostream>
 
 Log::Log(const string &message)
 {
@@ -17,7 +13,24 @@ Log::~Log()
 
 void Log::log_error(const string &message)
 {
-    fs::path currentDirectory = fs::absolute(fs::current_path());
+    const char *home = std::getenv("HOME");
+    fs::path logDir;
+
+    if (home)
+        logDir = fs::path(home) / ".local" / "share" / "wallppib" / "logs";
+    else
+        logDir = "/tmp/wallppib/logs";
+
+    fs::create_directories(logDir);
+    fs::path logFilePath = logDir / "errors.log";
+
+    std::ofstream logFile(logFilePath, std::ios::app);
+    if (logFile.is_open())
+    {
+        logFile << get_current_time() << " - " << message << std::endl;
+    }
+
+    /*fs::path currentDirectory = fs::absolute(fs::current_path());
 
     if (currentDirectory.filename() == "build")
     {
@@ -55,7 +68,7 @@ void Log::log_error(const string &message)
     else
     {
         cerr << "Error (" << logFilePath << ")" << endl;
-    }
+    }*/
 }
 
 string Log::get_current_time()

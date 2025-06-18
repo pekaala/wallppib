@@ -1,0 +1,6 @@
+.vscode/
+appimagetool*
+linuxdeploy*
+build/
+package.sh
+Wallppib-x86_64.AppImage

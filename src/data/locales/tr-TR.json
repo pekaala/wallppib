@@ -28,5 +28,11 @@
   "all_files": "Tüm Dosyalar",
   "select_image": "Resim Seç",
   "close": "Kapat",
-  "automatically_resize_image": "Resimleri 1920x1080 olarak boyutlandırmaya zorla"
+  "automatically_resize_image": "Resimleri 1920x1080 olarak boyutlandırmaya zorla",
+  "play_gif": "Oynat gif",
+  "loading_file": "Yükleniyor...",
+  "filter_all": "Hepsi",
+  "playing": "Oynatılıyor",
+  "error_x11": "GIF özelliği sadece Wayland'da desteklenir !!",
+  "success": "Başarılı"
 }

@@ -6,10 +6,11 @@ AppBarWindow::AppBarWindow(WindowSize winSize, Glib::RefPtr<Gtk::Application> ap
     set_default_size(winSize.W, winSize.H);
     signal_delete_event().connect(sigc::mem_fun(*this, &AppBarWindow::send_background_app));
 
+    apply_header_bar_menu();
+
     m_VBox.pack_start(m_Notebook, Gtk::PACK_EXPAND_WIDGET);
 
     string iconPath = DirectoryPath::get_data_icon_path();
-
     set_icon_from_file(iconPath + "/indi_wllp.svg");
 
     about_window = new AboutWindow(localization_Manager);
@@ -23,8 +24,7 @@ AppBarWindow::AppBarWindow(WindowSize winSize, Glib::RefPtr<Gtk::Application> ap
     localization_Manager.register_localizable_window(settings_window);
     localization_Manager.register_localizable_window(indicator);
 
-    m_Notebook.append_page(home_window->get_layout_scroll(), localization_Manager.get_key("menu_explore"));
-    header_bar();
+    m_Notebook.append_page(home_window->get_home_window_box(), localization_Manager.get_key("menu_explore"));
 
     add(m_VBox);
     show_all_children();
@@ -34,7 +34,7 @@ AppBarWindow::~AppBarWindow()
 {
 }
 
-void AppBarWindow::header_bar()
+void AppBarWindow::apply_header_bar_menu()
 {
     header_Bar.set_show_close_button(true);
     set_titlebar(header_Bar);
@@ -63,6 +63,7 @@ void AppBarWindow::header_bar()
 
     auto icon = Gtk::manage(new Gtk::Image(iconPath + "/ICmenu.png"));
 
+    menu_button.get_style_context()->add_class("outlined-button");
     menu_button.set_image(*icon);
     menu_button.signal_clicked().connect([this]()
                                          { this->menu.popup_at_pointer(nullptr); });
@@ -90,7 +91,7 @@ bool AppBarWindow::send_background_app(GdkEventAny *event)
 
 void AppBarWindow::listener_update_ui()
 {
-    m_Notebook.set_tab_label_text(home_window->get_layout_scroll(), localization_Manager.get_key("menu_explore"));
+    m_Notebook.set_tab_label_text(home_window->get_home_window_box(), localization_Manager.get_key("menu_explore"));
 
     menu_About.set_label(localization_Manager.get_key("menu_about"));
     menu_Settings.set_label(localization_Manager.get_key("menu_settings"));

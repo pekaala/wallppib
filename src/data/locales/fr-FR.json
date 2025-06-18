@@ -28,5 +28,11 @@
   "all_files": "Tous les fichiers",
   "select_image": "Sélectionner une image",
   "close": "Fermer",
-  "automatically_resize_image": "Forcer les images à être redimensionnées à 1920x1080"
+  "automatically_resize_image": "Forcer les images à être redimensionnées à 1920x1080",
+  "play_gif": "Lire le gif",
+  "loading_file": "Chargement...",
+  "filter_all": "Tout",
+  "playing": "Lecture en cours",
+  "error_x11": "La fonctionnalité GIF est uniquement prise en charge sur Wayland !!",
+  "success": "Succès"
 }

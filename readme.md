@@ -36,19 +36,18 @@ sudo apt-get install libgtkmm-3.0-dev
 
 ## In Progress Properties
 
-- **GIF Support**: Implementing functionality to handle Gif. ⏳
-- **MP4 to GIF**: : Convert an MP4 video to a GIF (supports up to 3 seconds). ⏳
-- **Gif Preview**: Opens the GIF in a new page. ⏳
-- **UI Update**: A big UI update with improved styling is coming soon. ⏳
+- **Bugs Fix**: Fixes for encountered errors. Work in progress. ⏳🛠️
 - **Flatpak, Snap (Snappy) & AppImage**: Support for seamless installation and integration, providing three package distribution methods. ⏳
+- **GIF Support**: Implementing functionality to handle Gif. ✅
+- **Gif Preview**: Opens the GIF in a new page. ✅
+- **UI Update**: A big UI update with improved styling is coming soon. ✅
+- **Filters**: Get file type and filter results accordingly. ✅
 - **Localization**: Supporting multiple languages including English, Turkish, and more. ✅
 
 ## Upcoming Features
 
 - **Feedback System**: Allows users to give feedback easily and help improve the application. 🟡
-- **Pagination and Search**: Efficient search and pagination features for easy navigation through wallpapers. 🟡
-- **Wallpaper management**: Organize and manage your wallpapers with ease. 🟡
-- **Customize wallpaper management**: Customization. 🟡
+- **MP4 to GIF**: Convert an MP4 video to a GIF — supports up to 3 seconds. 🟡
 - **Build for Windows**: Windows device version. 🟡
 - **Build for Macos**: Macos device version. 🟡
 - **OpenGL**: OpenGL & GLFW Support. 🟡

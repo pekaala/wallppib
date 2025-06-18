@@ -29,6 +29,7 @@ void AboutWindow::show_about_dialog(Gtk::Window &parent)
 
     Gtk::Button *githubButton = Gtk::manage(new Gtk::Button(localization_Manager.get_key("github_src")));
     githubButton->signal_clicked().connect(sigc::mem_fun(*this, &AboutWindow::on_source_code_clicked));
+    githubButton->get_style_context()->add_class("outlined-button");
     content->pack_start(*githubButton, Gtk::PACK_SHRINK);
 
     Gtk::Button *donateButton = Gtk::manage(new Gtk::Button("Donate"));
@@ -48,7 +49,11 @@ void AboutWindow::show_about_dialog(Gtk::Window &parent)
     dialog.get_content_area()->pack_start(*content);
     dialog.get_content_area()->show_all();
 
-    dialog.add_button(localization_Manager.get_key("close"), Gtk::RESPONSE_CLOSE);
+    close_Button.set_label(localization_Manager.get_key("close"));
+    close_Button.get_style_context()->add_class("outlined-button");
+    close_Button.show();
+    dialog.add_action_widget(close_Button, Gtk::RESPONSE_CLOSE);
+
     dialog.run();
 }
 

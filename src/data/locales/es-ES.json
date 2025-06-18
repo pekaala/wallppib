@@ -28,5 +28,11 @@
   "all_files": "Todos los archivos",
   "select_image": "Seleccionar imagen",
   "close": "Cerrar",
-  "automatically_resize_image": "Forzar el cambio de tamaño de las imágenes a 1920x1080"
+  "automatically_resize_image": "Forzar el cambio de tamaño de las imágenes a 1920x1080",
+  "play_gif": "Reproducir gif",
+  "loading_file": "Cargando...",
+  "filter_all": "Todo",
+  "playing": "Reproduciendo",
+  "error_x11": "La función GIF solo es compatible con Wayland !!",
+  "success": "Éxito"
 }

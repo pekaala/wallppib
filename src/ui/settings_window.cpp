@@ -34,6 +34,7 @@ void SettingsWindow::show_settings_dialog(Gtk::Window &parent)
 
     combo_Box.set_size_request(250, -1);
     combo_Box.set_margin_bottom(10);
+    combo_Box.get_style_context()->add_class("outlined-button");
 
     if (combo_Box.get_model() && combo_Box.get_model()->children().empty())
     {
@@ -61,7 +62,7 @@ void SettingsWindow::show_settings_dialog(Gtk::Window &parent)
     switch_Label.set_text(localization_Manager.get_key("automatically_resize_image"));
     switch_Label.set_halign(Gtk::ALIGN_START);
 
-    auto_Convert_Switch.set_active(Settings::read_settings_flag_from_disk());
+    auto_Convert_Switch.set_active(Settings::read_settings_config());
     auto_Convert_Switch.property_active().signal_changed().connect(sigc::mem_fun(*this, &SettingsWindow::on_settings_changed));
 
     switch_Wrapper->pack_start(switch_Label, Gtk::PACK_SHRINK);
@@ -73,6 +74,7 @@ void SettingsWindow::show_settings_dialog(Gtk::Window &parent)
     dialog->get_content_area()->show_all();
 
     close_Button.set_label(localization_Manager.get_key("close"));
+    close_Button.get_style_context()->add_class("outlined-button");
     close_Button.show();
     dialog->add_action_widget(close_Button, Gtk::RESPONSE_CLOSE);
 

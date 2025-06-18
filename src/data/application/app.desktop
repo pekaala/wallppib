@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Wallppib
+Comment=Wallpaper Management Application
+Exec=wallppib
+Icon=wallppib/icons/logo_icon.svg
+Type=Application
+Categories=Utility;Graphics;
+StartupNotify=true

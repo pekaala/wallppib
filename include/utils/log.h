@@ -1,12 +1,12 @@
 #ifndef LOG_H
 #define LOG_H
 
-#include <iostream>
-#include <fstream>
-#include <exception>
+#include <filesystem>
 #include <string>
+#include <ctime>
 
-using std::string;
+using namespace std;
+namespace fs = std::filesystem;
 
 class Log
 {

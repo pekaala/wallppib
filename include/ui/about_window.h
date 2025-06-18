@@ -24,6 +24,7 @@ public:
     void show_about_dialog(Gtk::Window &parent);
 
 private:
+    Gtk::Button close_Button;
     LocalizationManager &localization_Manager;
     WindowSize win_Size;
 

@@ -2,6 +2,7 @@
 
 string Settings::default_selected_language = "en-US";
 string Settings::key_default_selected_language = "selected_language";
+bool Settings::automatically_resize_image = false;
 
 string Settings::current_language = default_selected_language;
 json Settings::lang_key_values = json::object();
@@ -11,9 +12,9 @@ void Settings::handle_settings_toggle(bool enabled)
     Settings::write_settings_flag_to_disk(enabled);
 }
 
-bool Settings::get_current_settings_value()
+bool Settings::get_current_settings_config_value()
 {
-    return Settings::read_settings_flag_from_disk();
+    return Settings::read_settings_config();
 }
 
 void Settings::load_active_language_from_disk()
@@ -21,12 +22,13 @@ void Settings::load_active_language_from_disk()
     try
     {
         string filePath = DirectoryPath::get_data_localization_path();
-        string combinePath = filePath + "/data.json";
+        string combinePath = filePath + "/config.json";
 
         ifstream file(combinePath);
         if (!file.is_open())
         {
-            Log("Error: Could not open the file! readDataSelectedLanguageValue");
+            Log("Error: Could not open the file! load_active_language_from_disk");
+            Log("Error:" + combinePath);
             return;
         }
         json jsonData;
@@ -64,7 +66,8 @@ void Settings::read_language_code_from_config()
         ifstream file(combinePath);
         if (!file.is_open())
         {
-            Log("Error: Could not open the file! loadLanguageValues");
+            Log("Error: Could not open the file! read_language_code_from_config");
+            Log("Error:" + combinePath);
             return;
         }
         file >> lang_key_values;
@@ -82,11 +85,15 @@ void Settings::write_language_code_to_config(const string &code)
     try
     {
         string filePath = DirectoryPath::get_data_localization_path();
-        string combinePath = filePath + "/data.json";
+        string combinePath = filePath + "/config.json";
+
+        Log(combinePath.c_str());
 
         json jsonData;
+
         jsonData["selected_language"] = code;
         jsonData["default_language"] = default_selected_language;
+        jsonData["automatically_resize_image"] = automatically_resize_image;
 
         ofstream outFile(combinePath);
         if (outFile.is_open())
@@ -114,7 +121,7 @@ void Settings::write_settings_flag_to_disk(bool flag)
     try
     {
         string filePath = DirectoryPath::get_data_localization_path();
-        string combinePath = filePath + "/data.json";
+        string combinePath = filePath + "/config.json";
 
         json jsonData;
         ifstream inFile(combinePath);
@@ -129,6 +136,7 @@ void Settings::write_settings_flag_to_disk(bool flag)
             return;
         }
 
+        automatically_resize_image = flag;
         jsonData["automatically_resize_image"] = flag;
 
         ofstream outFile(combinePath);
@@ -149,12 +157,12 @@ void Settings::write_settings_flag_to_disk(bool flag)
     }
 }
 
-bool Settings::read_settings_flag_from_disk()
+bool Settings::read_settings_config()
 {
     try
     {
         string filePath = DirectoryPath::get_data_localization_path();
-        string combinePath = filePath + "/data.json";
+        string combinePath = filePath + "/config.json";
 
         json jsonData;
         ifstream inFile(combinePath);
