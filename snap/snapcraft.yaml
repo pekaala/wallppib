@@ -80,20 +80,12 @@ parts:
       export CXXFLAGS="$CXXFLAGS -pthread"
       export LDFLAGS="$LDFLAGS -lpthread -Wl,--no-as-needed"
 
-      cmake -B build -S . \
+      cmake -B _build -S . \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_CXX_FLAGS="-pthread" \
         -DCMAKE_EXE_LINKER_FLAGS="-lpthread -Wl,--no-as-needed"
-      cmake --build build --parallel $(nproc)
+      cmake --build _build --parallel $(nproc)
 
-      install -D build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
-
-      # Gdk-pixbuf loader setup
-      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0
-      gdk-pixbuf-query-loaders > $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
-
-      ln -s /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/
-
-      update-mime-database $SNAPCRAFT_PART_INSTALL/usr/share/mime
+      install -D _build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
     after:
       - nlohmann-json
