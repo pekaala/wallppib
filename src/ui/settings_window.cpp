@@ -1,5 +1,7 @@
 #include "../../include/ui/settings_window.h"
 
+using namespace std;
+
 SettingsWindow::SettingsWindow(LocalizationManager &locManager) : localization_Manager(locManager)
 {
 }

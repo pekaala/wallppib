@@ -3,12 +3,10 @@
 
 #include <string>
 
-using std::string;
-
 class FileType
 {
 public:
-    static bool is_gif(const string &filePath);
+    static bool is_gif(const std::string &filePath);
 };
 
 #endif // FILE_TYPE_H

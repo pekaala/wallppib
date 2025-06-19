@@ -6,12 +6,10 @@
 #include <chrono>
 #include <string>
 
-using std::string;
-
 class InfoBarMessage : public Gtk::Box
 {
 public:
-    InfoBarMessage(const Glib::ustring &message, const string &color);
+    InfoBarMessage(const Glib::ustring &message, const std::string &color);
     ~InfoBarMessage();
     void show_info_bar();
 

@@ -1,5 +1,7 @@
 #include "../../include/ui/home_window.h"
 
+using namespace std;
+
 /*PUBLIC*/
 HomeWindow::HomeWindow(LocalizationManager &locManager) : localization_Manager(locManager)
 {

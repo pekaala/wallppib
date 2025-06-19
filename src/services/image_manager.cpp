@@ -1,5 +1,7 @@
 #include "../../include/services/image_manager.h"
 
+using namespace std;
+
 /*PUBLIC*/
 future<void> ImageManager::get_all_images(const string &filterType)
 {

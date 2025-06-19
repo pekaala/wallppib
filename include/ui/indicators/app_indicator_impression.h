@@ -1,16 +1,14 @@
-
 #ifndef APP_INDICATOR_STATUS_H
 #define APP_INDICATOR_STATUS_H
 
 #include <gtkmm.h>
 #include <libayatana-appindicator/app-indicator.h>
 #include <string>
+
 #include "../../utils/directory_path.h"
 #include "../../utils/localization/i_localization.h"
 #include "../../utils/localization/localization_manager.h"
 #include "../../common/window_size.h"
-
-using namespace std;
 
 class AppIndicatorImpression : public Gtk::Window, public ILocalization
 {

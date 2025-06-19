@@ -3,14 +3,12 @@
 
 #include <string>
 
-using namespace std;
-
 struct WindowSize
 {
-    const string appId = "com.wallppib";
-    const string appName = "wallppib";
+    const char *appId = "com.wallppib";
+    const char *appName = "wallppib";
 
-    const string version = "1.2.1";
+    const char *version = "1.2.2";
 
     const int W = 1300;
     const int H = 600;

@@ -1,5 +1,7 @@
 #include "../../include/ui/about_window.h"
 
+using namespace std;
+
 AboutWindow::AboutWindow(LocalizationManager &locManager) : localization_Manager(locManager)
 {
 }

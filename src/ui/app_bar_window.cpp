@@ -1,5 +1,7 @@
 #include "../../include/ui/app_bar_window.h"
 
+using namespace std;
+
 AppBarWindow::AppBarWindow(WindowSize winSize, Glib::RefPtr<Gtk::Application> app_ref) : m_VBox(Gtk::ORIENTATION_VERTICAL), m_Notebook(), app(app_ref)
 {
     set_title(winSize.appName);

@@ -7,13 +7,13 @@
 #include <giomm/menu.h>
 #include <gtkmm/dialog.h>
 #include <gtkmm/switch.h>
-#include <iostream>
+#include <gtkmm/button.h>
+#include <string>
+
 #include "../utils/localization/i_localization.h"
 #include "../utils/localization/localization_manager.h"
 #include "../utils/log.h"
 #include "../utils/settings.h"
-
-using namespace std;
 
 class SettingsWindow : public ILocalization
 {

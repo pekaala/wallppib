@@ -1,5 +1,7 @@
 #include "../../include/utils/file_type.h"
 
+using namespace std;
+
 bool FileType::is_gif(const string &filePath)
 {
     if (filePath.empty())

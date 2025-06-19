@@ -1,4 +1,3 @@
-
 #ifndef ABOUT_WINDOW_H
 #define ABOUT_WINDOW_H
 
@@ -8,6 +7,7 @@
 #include <gtkmm/separator.h>
 #include <gtkmm/image.h>
 #include <gtkmm/dialog.h>
+
 #include "../utils/directory_path.h"
 #include "../utils/log.h"
 #include "../utils/localization/i_localization.h"
@@ -16,7 +16,6 @@
 
 class AboutWindow : public ILocalization
 {
-
 public:
     AboutWindow(LocalizationManager &locManager);
     ~AboutWindow();

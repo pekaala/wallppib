@@ -1,5 +1,7 @@
 #include "../../include/utils/settings.h"
 
+using namespace std;
+
 string Settings::default_selected_language = "en-US";
 string Settings::key_default_selected_language = "selected_language";
 bool Settings::automatically_resize_image = false;

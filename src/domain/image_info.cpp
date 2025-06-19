@@ -1,5 +1,7 @@
 #include "../../include/domain/image_info.h"
 
+using namespace std;
+
 Image::Image(const string &imgName, const string &path, int width, int height)
     : imageName(imgName), path(path), width(width), height(height)
 {

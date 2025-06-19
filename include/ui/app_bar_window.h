@@ -2,7 +2,8 @@
 #define APP_BAR_WINDOW_H
 
 #include <gtkmm.h>
-#include <iostream>
+#include <string>
+
 #include "about_window.h"
 #include "home_window.h"
 #include "settings_window.h"
@@ -15,7 +16,6 @@
 
 class AppBarWindow : public Gtk::Window, public ILocalization
 {
-
 public:
     AppBarWindow(WindowSize winSize, Glib::RefPtr<Gtk::Application> app_ref);
     ~AppBarWindow();

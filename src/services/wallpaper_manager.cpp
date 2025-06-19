@@ -1,5 +1,7 @@
 #include "../../include/services/wallpaper_manager.h"
 
+using namespace std;
+
 void WallpaperManager::set_wallpaper(const string &imagePath)
 {
     set_wallpaper_linux(imagePath);

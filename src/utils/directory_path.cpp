@@ -4,6 +4,8 @@
 #include <filesystem>
 #include <array>
 
+using namespace std;
+
 /*PUBLIC*/
 void DirectoryPath::initialize_user_config()
 {
@@ -331,7 +333,6 @@ void DirectoryPath::open_containing_folder(const string &file_path)
 }
 
 /*PRIVATE*/
-
 string DirectoryPath::get_folder_path(const string &file_path)
 {
     size_t found = file_path.find_last_of("/\\");

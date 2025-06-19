@@ -1,5 +1,7 @@
 #include "../../../include/ui/alerts/info_bar_message.h"
 
+using namespace std;
+
 InfoBarMessage::InfoBarMessage(const Glib::ustring &message, const string &color)
 {
     set_orientation(Gtk::ORIENTATION_VERTICAL);

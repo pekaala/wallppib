@@ -1,6 +1,9 @@
 #include "../../include/utils/log.h"
 #include <fstream>
 #include <iostream>
+#include <cstdlib>
+
+using namespace std;
 
 Log::Log(const string &message)
 {

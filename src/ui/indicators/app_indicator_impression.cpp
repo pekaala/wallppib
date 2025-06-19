@@ -1,5 +1,7 @@
 #include "../../../include/ui/indicators/app_indicator_impression.h"
 
+using namespace std;
+
 AppIndicatorImpression::AppIndicatorImpression(LocalizationManager &locManager, Glib::RefPtr<Gtk::Application> app_ref) : localization_Manager(locManager), app(app_ref)
 {
     set_default_size(300, 200);

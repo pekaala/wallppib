@@ -1,5 +1,7 @@
 #include "../../../include/utils/localization/localization_manager.h"
 
+using namespace std;
+
 LocalizationManager::LocalizationManager()
 {
     if (supportedLanguages.empty())
