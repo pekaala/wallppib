@@ -36,6 +36,10 @@ sudo apt-get install libgtkmm-3.0-dev
 - **App Status**: Processing Indicator.
 -->
 
+| ✅ Completed | ⏳ In Progress | ⏳🛠️ Actively Being Developed | 🟡 Planned Feature |
+| ------------ | -------------- | ----------------------------- | ------------------ |
+| Work is done | Work started   | Work in active development    | Feature is planned |
+
 ## In Progress Properties
 
 - **Bugs Fix**: Fixes for encountered errors. Work in progress. ⏳🛠️
