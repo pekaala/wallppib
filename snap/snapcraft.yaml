@@ -55,8 +55,6 @@ parts:
       - libgdk-pixbuf2.0-dev
       - libayatana-appindicator3-dev
       - libpthread-stubs0-dev
-      - gdk-pixbuf2.0-bin
-      - libgdk-pixbuf2.0-bin
       - libgdk-pixbuf2.0-0
     stage-packages:
       - libgtk-3-0
