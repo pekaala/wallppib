@@ -57,6 +57,7 @@ parts:
       - libpthread-stubs0-dev
       - gdk-pixbuf2.0-bin
       - libgdk-pixbuf2.0-bin
+      - libgdk-pixbuf2.0-0
     stage-packages:
       - libgtk-3-0
       - libx11-6
@@ -94,7 +95,6 @@ parts:
 
       # Gdk-pixbuf loader setup
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0
-      gdk-pixbuf-query-loaders > $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
 
       ln -sf /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders \
         $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/
