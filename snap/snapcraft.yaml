@@ -1,6 +1,6 @@
 name: wallppib
 version: '1.1.1'
-summary: wallppib - A wallpaper management for Linux
+summary: wallppib - A wallpaper management tool for Linux
 description: |
   wallppib is a wallpaper management tool for Linux desktops.
 
@@ -40,8 +40,9 @@ parts:
       json-3.11.2/single_include/nlohmann: include/nlohmann
 
   wallppib:
-    plugin: cmake
+    plugin: nil
     source: https://github.com/pekaala/wallppib.git
+    source-type: git
     build-packages:
       - build-essential
       - cmake
@@ -82,10 +83,20 @@ parts:
 
       cmake -B _build -S . \
         -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_CXX_FLAGS="-pthread" \
-        -DCMAKE_EXE_LINKER_FLAGS="-lpthread -Wl,--no-as-needed"
+        -DCMAKE_CXX_FLAGS="${CXXFLAGS}" \
+        -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"
+
       cmake --build _build --parallel $(nproc)
 
       install -D _build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
+
+      # Gdk-pixbuf loader setup
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0
+      gdk-pixbuf-query-loaders > $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
+
+      ln -sf /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders \
+        $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/
+
+      update-mime-database $SNAPCRAFT_PART_INSTALL/usr/share/mime
     after:
       - nlohmann-json
