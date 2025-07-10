@@ -30,6 +30,7 @@ apps:
       LANG: C.UTF-8
       GDK_PIXBUF_MODULE_FILE: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders.cache
       XDG_DATA_DIRS: '$SNAP/usr/share:$XDG_DATA_DIRS'
+      LD_LIBRARY_PATH: '$SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET:$LD_LIBRARY_PATH'
 
 parts:
   nlohmann-json:
@@ -55,7 +56,6 @@ parts:
       - libgdk-pixbuf2.0-dev
       - libayatana-appindicator3-dev
       - libpthread-stubs0-dev
-      - libgdk-pixbuf2.0-0
     stage-packages:
       - libgtk-3-0
       - libx11-6
@@ -75,6 +75,7 @@ parts:
       - shared-mime-info
       - adwaita-icon-theme
       - libayatana-appindicator3-1
+      - libopencv-stitching4.2
     organize:
       usr/lib/*-linux-gnu/blas/*: usr/lib/
       usr/lib/*-linux-gnu/lapack/*: usr/lib/
@@ -91,11 +92,12 @@ parts:
 
       install -D _build/wallppib $SNAPCRAFT_PART_INSTALL/bin/wallppib
 
-      # Gdk-pixbuf loader setup
-      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0
-
-      ln -sf /usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/loaders \
-        $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/gdk-pixbuf-2.0/2.10.0/
+      install -D /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2 \
+        $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/
+      install -D /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4 \
+        $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/
+      install -D /usr/lib/x86_64-linux-gnu/libopencv_stitching.so \
+        $SNAPCRAFT_PART_INSTALL/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/
 
       update-mime-database $SNAPCRAFT_PART_INSTALL/usr/share/mime
     after:
