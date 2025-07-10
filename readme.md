@@ -36,7 +36,7 @@ sudo apt-get install libgtkmm-3.0-dev
 - **App Status**: Processing Indicator.
 -->
 
-![presentation gif](https://github.com/pekaala/wallppib/tree/main/screenshots/presentation/present.gif)
+![presentation gif](https://github.com/pekaala/wallppib/blob/main/screenshots/presentation/present.gif)
 
 | ✅ Completed | ⏳ In Progress | ⏳🛠️ Actively Being Developed | 🟡 Planned Feature |
 | ------------ | -------------- | ----------------------------- | ------------------ |
