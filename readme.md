@@ -1,6 +1,6 @@
 ![Logo](https://raw.githubusercontent.com/pekaala/wallppib/6ab8329be185abf466c69699d1b765b87f1193ae/sc/logo_icon.svg)
 
-# Build Version (Linux)
+# Local Build Version (Linux)
 
 First, install the necessary dependencies:
 
