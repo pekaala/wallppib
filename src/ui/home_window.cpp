@@ -272,7 +272,7 @@ bool HomeWindow::on_image_click(GdkEventButton *event, const Image &imageInfo)
     openFile_Btn->get_style_context()->add_class("outlined-button");
     openFile_Btn->signal_clicked().connect(sigc::mem_fun(*this, &HomeWindow::open_containing_current_file));
     delete_Btn->get_style_context()->add_class("outlined-button");
-    delete_Btn->signal_clicked().connect(sigc::mem_fun(*this, &HomeWindow::on_delete_image));
+    delete_Btn->signal_clicked().connect(sigc::mem_fun(*this, &HomeWindow::on_delete_image_handler));
 
     auto close_Button = Gtk::make_managed<Gtk::Button>(localization_Manager.get_key("close"));
     close_Button->get_style_context()->add_class("outlined-button");
@@ -403,6 +403,19 @@ void HomeWindow::on_set_wallpaper()
     auto *info_bar = new InfoBarMessage(localization_Manager.get_key("success"), "success");
     main_Box.pack_start(*info_bar, Gtk::PACK_SHRINK);
     info_bar->show_info_bar();
+}
+
+void HomeWindow::on_delete_image_handler()
+{
+    Gtk::MessageDialog dialog(*this, localization_Manager.get_key("confirm_delete_image"),
+                              false, Gtk::MESSAGE_QUESTION, Gtk::BUTTONS_YES_NO, true);
+
+    int result = dialog.run();
+
+    if (result == Gtk::RESPONSE_YES)
+    {
+        on_delete_image();
+    }
 }
 
 void HomeWindow::on_delete_image()

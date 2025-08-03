@@ -34,5 +34,6 @@
   "filter_all": "Tout",
   "playing": "Lecture en cours",
   "error_x11": "La fonctionnalité GIF est uniquement prise en charge sur Wayland !!",
-  "success": "Succès"
+  "success": "Succès",
+  "confirm_delete_image": "Êtes-vous sûr de vouloir supprimer cette image ?"
 }

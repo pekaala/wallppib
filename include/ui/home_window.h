@@ -55,6 +55,7 @@ protected:
     bool on_image_click(GdkEventButton *event, const Image &imageInfo);
     void on_select_image();
     void on_set_wallpaper();
+    void on_delete_image_handler();
     void on_delete_image();
     void open_containing_current_file();
     void on_close_dialog();

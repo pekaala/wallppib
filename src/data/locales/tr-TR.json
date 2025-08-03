@@ -34,5 +34,6 @@
   "filter_all": "Hepsi",
   "playing": "Oynatılıyor",
   "error_x11": "GIF özelliği sadece Wayland'da desteklenir !!",
-  "success": "Başarılı"
+  "success": "Başarılı",
+  "confirm_delete_image": "Silmek istedigine emin misin?"
 }

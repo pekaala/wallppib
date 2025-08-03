@@ -34,5 +34,6 @@
   "filter_all": "Todo",
   "playing": "Reproduciendo",
   "error_x11": "La función GIF solo es compatible con Wayland !!",
-  "success": "Éxito"
+  "success": "Éxito",
+  "confirm_delete_image": "¿Estás seguro de que deseas eliminar esta imagen?"
 }
